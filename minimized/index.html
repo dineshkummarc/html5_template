@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js old ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js old ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7 ]> class="no-js iem7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js old ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--HEAD-->
+<head>
+	<!-- Title of website -->
+	<title></title>
+	<!-- Charset: you use UTF-8 almost everything or in other cases, you can use standard latin charset -->
+	<!-- IF YOU USE UTF-8 CHARSET, YOU SAVE YOUR FILES TO UTF-8 WITHOUT BOM AND IF YOU USE LATIN-1 OR 2, YOU SAVE TO ANSI !! -->
+	<!-- Latin-1 <meta charset="ISO-8859-1"> --> 
+	<!-- Latin-2 <meta charset="ISO-8859-2"> --> 
+	<meta charset="UTF-8">
+	
+	<!-- HTTP-EQUIV TAGS -->
+	<!-- Specifies the character encoding for the document, but using http-equiv is no longer the only way to specify the character set of an HTML 
+	document. You use meta charset instead of it, or both of them. -->
+	<!-- Latin-1 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"> -->
+	<!-- Latin-2 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-2"> -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- Specified the preferred style sheet to use. -->
+	<meta http-equiv="default-style" content="css/style.css">
+	<!-- Defines a time interval for the document to refresh itself.  The value "refresh" should be used carefully, as it takes the control of a page 
+	away from the user. Using "refresh" will cause a failure in W3C's Web Content Accessibility Guidelines. (http://www.w3.org/WAI/intro/wcag.php) -->
+	<!-- <meta http-equiv="refresh" content="300"> -->
+	
+	<!-- META TAGS
+	We use only registered meta tags, which are validated by W3C validator. There are some new meta name tag, and some of them, which was 
+	valid in HTML4 or XHTML1.x, actually unusable with a valid HTML5 site. We recommend you won't use every meta tag, only that you think usefully.
+	You can read and extend full registered HTML5 meta name tag list in WHATWG wiki 
+	(http://wiki.whatwg.org/wiki/MetaExtensions) -->
+	
+	<!-- META NAME TAGS -->
+	<meta name="application-name" content="Specifies the name of the Web application that the page represents">
+	<meta name="author" content="Author of site">
+	<meta name="description" content="Description of content">
+	<meta name="designer" content="Designer's name">
+	<meta name="generator" content="Generator or editor software">
+	<meta name="keywords" content="HTML, HTML DOM, Meta Tags">
+	<meta name="publisher" content="Publisher's name">
+	<meta name="rating" content="all | children | youngs | senior">
+	<meta name="revisit-after" content="7 days | 14 days | 1 month | 2 months | 3 months | 1 year">
+	<meta name="rights-standard" content="pd|cc by-sa|cc by-nd|cc by-nc|cc by-nc-sa|cc by-nc-nd">
+	<meta name="robots" content="all | follow | index | noarchive | noindex | nofollow | none ">
+	
+	<!-- Company-related META NAME TAGS -->
+	<!-- As against general meta name tags, following meta tags related on companies -->
+	
+	<!-- ALEXA -->
+	<!-- Used to verify ownership of Alexa Search (http://www.alexa.com/faqs/?p=188) -->
+	<meta name="alexaverifyid" content="">
+	
+	<!-- BAIDUS -->
+	<!-- Synonym of robots for targeting Baidu only. (http://www.baidu.com/search/robots_english.html) -->
+	<meta name="baiduspider" content="">
+	
+	<!-- CITESEERX -->
+	<!-- Synonym of robots for targeting CiteSeerX only. (http://csxstatic.ist.psu.edu/submit) -->
+	<!-- IT DOESN'T SEEMS TO VALID, USE ROBOTS.TXT INSTEAD OF THIS METATAG -->
+	<!-- <meta name="citeseerxbot" content=""> -->
+	
+	<!-- EASYCMS -->
+	<!-- Object Title, where this is not the TITLE or H1 tag content, but the resource title (http://www.eibs.co.uk/reference/) -->
+	<meta name="es.title" content="">
+	
+	<!-- ESSAYDIRECTORY -->
+	<!-- Defines a custom description of websites listed in EssayDirectory.com 
+	(http://essaydirectory.com/privacy-terms/#EssayDirectory_MetaExtension) -->
+	<meta name="EssayDirectory" content="">
+	
+	<!-- OPENSEARCH -->
+	<!-- Used to identify the index of the first search result in the current set of search results. 
+	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) -->
+	<meta name="startIndex" content="">
+	<!-- Used to identify the number of search results returned per page. 
+	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) -->
+	<meta name="itemsPerPage" content="">
+	<!-- Used to identify the number of search results available for the current search. 
+	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) -->
+	<meta name="totalResults" content="">
+	
+	<!-- NORTON -->
+	<!-- Used to verify ownership of Website for Norton SafeWeb. (http://safeweb.norton.com/help/site_owners#verification_tips) -->
+	<meta name="norton-safeweb-site-verification" content="">
+	
+	<!-- RESTRICTED TO ADULTS LABEL -->
+	<!-- Rating tag is not same with earlier rating tag (which can use "all | children | youngs | seniors" content values. The Restricted to Adults 
+	label (RTA) provides a way for adult oriented websites to indicate that their content is off limits to children. RTA was introduced in 2006 and is 
+	currently used by a large number of adult web content providers. RTA is recognized by all major parental control filters. 
+	(http://www.rtalabel.org/index.php?content=howto) -->
+	<meta name="rating" content="RTA-5042-1996-1400-1577-RTA">
+	
+	<!-- SKYPE -->
+	<!-- Prevents the Skype browser extension from automatically seeking through the page and replacing telephone numbers (or any number the program's 
+	algorithm thinks is a telephone number) with its own custom presentation that allows direct invocation of the Skype program to call the telephone 
+	number. (http://skype.otherlinks.co.uk/page.asp?id=toolbar_number_formatting) -->
+	<!-- IT DOES NOT SEEMS TO BE VALID, YOU DON'T USE IT UNTIL IT BECOME VALIDABLE -->
+	<!-- <meta name="skype_toolbar" content="skype_toolbar_parser_compatible"> -->
+	
+	<!-- YAHOO -->
+	<!-- Used to verify ownership for Yahoo! Site Explorer (http://help.yahoo.com/l/us/yahoo/search/siteexplorer/siteexplorer-06.html) -->
+	<meta name="y_key" content="">
+	<!-- Synonym of robots for targeting Yahoo! only. (http://help.yahoo.com/l/au/yahoo7/search/indexing/indexing-11.html) -->
+	<meta name="slurp" content="">
+	
+	<!-- TEOMA, ASK.COM -->
+	<!-- Synonym of robots for targeting Teoma and Ask.com only. (http://about.ask.com/en/docs/about/webmasters.shtml) -->
+	<meta name="teoma" content="">
+	
+	<!-- YANDEX -->
+	<!-- Used to verify ownership for Yandex Webmaster. (http://help.yandex.ru/webmaster/?id=995300#995356) -->
+	<meta name="yandex-verification" content="">
+	
+	<!-- HEALTH CANADA WEB METADATA APPLICATION PROFILE MARCH 2009 -->
+	<!-- The date a resource is scheduled for review by content creator in order to determine if it should be archived, updated or retained as is. 
+	(http://www.hc-sc.gc.ca/home-accueil/alt_formats/pacrb-dgapcr/pdf/Metadata_Application_Profile_2009.pdf) -->
+	<meta name="review_date" content="">
+	<!-- The date used to indicate that the Metadata has been prepared and/or reviewed and approved by the Metadata Unit. Its purpose is administrative. 
+	(Used by "Autonomy".) (http://www.hc-sc.gc.ca/home-accueil/alt_formats/pacrb-dgapcr/pdf/Metadata_Application_Profile_2009.pdf) -->
+	<meta name="meta_date" content="">
+
+	<!-- APPLE -->
+	
+	<!-- GOOGLE -->
+	
+	<!-- MICROSOFT -->
+	
+	<!-- WEB-TRENDS -->
+	
+	<!-- GLOBRIX -->
+	
+	<!-- RUBY -->
+	
+	<!-- DUBLIN CORE TAGS -->
+	<!-- New Dublin Core nomenclature, you use "dcterms.tag" instead of old "dc.tag" form. We don't use every DC tag, only that we thought usefully.
+	You can read and extend full registered HTML5 meta name tag list in WHATWG wiki (http://wiki.whatwg.org/wiki/MetaExtensions) -->
+	<meta name="dcterms.title" lang="en" content="Title of website">
+	<meta name="dcterms.creator" content="Author of site">
+	<meta name="dcterms.subject" lang="en" content="HTML, HTML DOM, Meta Tags">
+	<meta name="dcterms.description" lang="en" content="Description of content">
+	<meta name="dcterms.publisher" content="Publisher of site">
+	<meta name="dcterms.contributor" content="Contributor of site">
+	<meta name="dcterms.date" content="2011-03-05">
+	<meta name="dcterms.type" content="Collection | Dataset | Event | Image | InteractiveResource | MovingImage | PhysicalObject | Service | Sound | StillImage | Text">
+	<meta name="dcterms.format" content="text/html | MIME">
+	<meta name="dcterms.identifier" content="/meta-tags/dublin/">
+	<meta name="dcterms.source" content="/meta-tags/">
+	<meta name="dcterms.language" content="en">
+	<meta name="dcterms.relation" content="/meta-tags/">
+	<meta name="dcterms.coverage" content="World | Local">
+	<meta name="dcterms.rights" content="/legal/terms-of-use.htm">
+	
+	<!-- GEO TAGS -->
+</head>
+</html>
+		
