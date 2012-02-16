@@ -1,7 +1,7 @@
 <!--Title: HTML5 template		
 	Creator: Mukli Krisztián
 	Subject: html5, website, template, base, development
-	Description: An initial html5-based site, optimized for most used functions. Usage: remove comments, and change used and necessary features.
+	Description: 	 Usage: remove comments, and change used and necessary features.
 	Publisher: Mukli Krisztián
 	Contributor: no contributors
 	Date: 2012.02.02.
@@ -43,7 +43,7 @@ css-classes, which concern the full html-site. This classes:
 <head>
 	<!-- Title of website -->
 	<title></title>
-	<!-- Charset: you use UTF-8 almost everything or in other cases, you can use standard latin charset -->
+	<!-- Charset: you use UTF-8 almost everything or in other cases you can use standard latin charset -->
 	<!-- IF YOU USE UTF-8 CHARSET, YOU SAVE YOUR FILES TO UTF-8 WITHOUT BOM AND IF YOU USE LATIN-1 OR 2, YOU SAVE TO ANSI !! -->
 	<!-- Latin-1 <meta charset="ISO-8859-1"> --> 
 	<!-- Latin-2 <meta charset="ISO-8859-2"> --> 
@@ -62,8 +62,8 @@ css-classes, which concern the full html-site. This classes:
 	<!-- <meta http-equiv="refresh" content="300"> -->
 	
 	<!-- META TAGS
-	We use only registered meta tags, which are validated by W3C validator. There are some new meta name tag, and some of them, which was 
-	valid in HTML4 or XHTML1.x, actually unusable with a valid HTML5 site. We recommend you won't use every meta tag, only that you think usefully.
+	We use only proposed meta tags, which are validated by W3C validator. There are some new meta name tag, and some of them, which was 
+	valid in HTML4 or XHTML1.x, actually unusable with a valid HTML5 site. We recommend you don't use every meta tag, only that you think usefully.
 	You can read and extend full registered HTML5 meta name tag list in WHATWG wiki 
 	(http://wiki.whatwg.org/wiki/MetaExtensions) -->
 	
@@ -167,40 +167,222 @@ css-classes, which concern the full html-site. This classes:
 	The suggested default setting is that of a Pocket PC or 240. -->
 	<meta name="MobileOptimized" content="176 | 240 | 480">
 	
-
+	<!-- MARKOSWEB -->
+	<!-- Used to verify ownership of Markosweb.com (http://www.markosweb.com/help/ownership/) -->
+	<meta name="markosweb.com/validation" content="">	
 
 	<!-- APPLE -->
-	
+	<!-- Sets whether a web application runs in full-screen mode. If content is set to yes, the web application runs in full-screen mode; otherwise, it 
+	does not. The default behavior is to use Safari to display web content. 
+	https://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html) -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Sets the style of the status bar for a web application. This meta tag has no effect unless you first specify full-screen mode as described in “apple-mobile-web-app-capable.”
+	If content is set to default, the status bar appears normal. If set to black, the status bar has a black background. If set to black-translucent, the 
+	status bar is black and translucent. If set to default or black, the web content is displayed below the status bar. If set to black-translucent, the 
+	web content is displayed on the entire screen, partially obscured by the status bar. The default value is default. -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default | black | black-translucent">
+	<!-- Enables or disables automatic detection of possible phone numbers in a webpage in Safari on iOS. By default, Safari on iOS detects any string 
+	formatted like a phone number and makes it a link that calls the number. Specifying telephone=no disables this feature. -->
+	<meta name="format-detection" content="telephone=no">
+	<!--  Mobile Viewport Fix
+	https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
+	davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
 	<!-- GOOGLE -->
+	<!-- Used to verify ownership for Webmaster Tools. (http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=79812) -->
+	<meta name="google-site-verification" content="">
+	<!-- Synonym of robots for targeting Googlebot only. (http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=93710) -->
+	<meta name="googlebot" content="">
+	<!-- Legacy verification for Google Sitemaps. (http://sitemaps.blogspot.com/2006/05/more-about-meta-tag-verification.html -->
+	<meta name="verify-v1" content="">
 	
 	<!-- MICROSOFT -->
+	<!-- The "application-name" metadata defines the name of the Pinned Site application instance. This is the name that appears in a tooltip when 
+	hovering over the Pinned Site button on the Windows 7 taskbar. The application name is also appended to the window title of the Pinned Site 
+	application instance. -->
+	<meta name="application-name" content="">
+	<!-- Jump List items act as entry points into the website even when the browser is not running. A Jump List can contain commonly used destinations
+	and tasks. Some items apply to the whole site, and some apply only to specific users. 
+	(http://msdn.microsoft.com/en-us/library/gg491725(v=vs.85).aspx) -->
+	<meta name="msapplication-task" content="">
+	<!-- The "msapplication-starturl" metadata contains the root URL of the application. The start URL can be fully qualified, or relative to the current 
+	document. Only HTTP and HTTPS protocols are allowed. If this element is missing, the address of the current page is used instead. 
+	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-starturl" content="">
+	<!-- The "msapplication-tooltip" metadata provides additional tooltip text that appears when you hover over the Pinned Site shortcut in the Windows 
+	Start menu or on the desktop. (http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-tooltip" content="">
+	<!-- The "msapplication-navbutton-color" metadata define the custom color of the Back and Forward buttons in the Pinned Site browser window. Any named 
+	color, or hex color value is valid. (http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-navbutton-color" content="">
+	<!-- The "msapplication-window" metadata sets the initial size of the Pinned Site window when it is launched for the first time. However, if the 
+	user adjusts the size of the window, the Pinned Site retains the new dimensions when it is launched again. The following properties can be used in
+	the value of the content attribute:
+	width - The window width in pixels. The minimum value is 800.
+	height - The window height in pixels. The minimum value is 600.
+	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-window" content="">
+	<!-- Place this element between tasks to place a visible line in the Jump List menu. The separators must be made unique by declaring 
+	content="[unique value]" if you have more than one. -->
+	<meta name="msapplication-task-separator" content="">
+	<!-- One of the verification elements used by Bing. (http://onlinehelp.microsoft.com/en-us/bing/hh204490.aspx) -->
+	<meta name="msvalidate.01" content="">
 	
 	<!-- WEB-TRENDS -->
+	<!-- http://product.webtrends.com/WRC/OnDemand/ResourceCenter/rc/Library/PDF/IGOD/WebTrendsAnalyticsOnDemandImplementationGuide.pdf -->
+	<!-- Name of the Content Group
+	Used to configure the appropriate Webtrends advanced feature. These are just some of the more popular ones. These appear in your META tags. – 
+	showing you the web page, the source (meta tag), the log files entry and the subsequent WT report. -->
+	<meta name="wt.cg_n" content="">
+	<!-- Name of Content Sub-Group
+	Used to configure the appropriate Webtrends advanced feature. These are just some of the more popular ones. These appear in your META tags. – 
+	showing you the web page, the source (meta tag), the log files entry and the subsequent WT report. -->
+	<meta name="wt.cg_s" content="">
+	<!-- Advertising Click parameter
+	When a visitor to your site clicks on an ad, that action is referred to as an Ad Click. The following META tag tracks advertising clicks:
+	<META NAME="WT.ac" CONTENT="name">
+	Defines the name of the advertisement clicked to reach a particular web page. The Ad Click must contain an external redirect back to the client. 
+	The redirect needs to include the necessary code to generate a hit to the SDC server. You can designate multiple Advertising Clicks using 
+	semicolons. Examples:
+	<a href="file111.html?WT.ac=CONTENT111">
+	<a href="file222.html?WT.ac=CONTENT222">
+	The name of the advertisement clicked to reach a particular web page. To capture this information with DCS, the Advertising Click must contain an 
+	external redirect back to the client. The redirect needs to
+	include the necessary code to generate a hit to the DCS. The maximum length for each name is 64 bytes. -->
+	<meta name="wt.ac" content="">
+	<!-- Advertising View parameter
+	Visitors often view advertisements that they do not necessarily click on. You can use On-Site Advertising to determine the number of visitors to 
+	your web site who view particular ads. With this feature you can produce advertising reports for each of your clients. If you are selling 
+	advertising space on your web site, for example, you can collect traffic statistics to help determine pricing schedules. An Ad View occurs when a 
+	visitor views a page containing an ad. An ad is a link or graphic that contains an Ad Click parameter in the query portion of it's URL. -->
+	<meta name="wt.ad" content="">
+	<!-- Identifies the ID of the marketing campaign
+	To attract new students, a university launches a marketing campaign by sending recruitment email to all graduating high school seniors in a 
+	metropolitan area. The email links to a special landing page in the university’s web site, containing the following META tag to track marketing 
+	campaigns. Example:
+	<META NAME="WT.mc_id" CONTENT="1X2GG34">
+	You may use this parameter on the URL. Example:
+	<a href="link?WT.mc_id=1X2GG34">
+	The Campaign ID 1X2GG34 represents recruits to be contacted by email -->
+	<meta name="wt.mc_id" content="">
+	<!-- Tracking Servers parameter
+	If your site is hosted on multiple servers, a server cluster, or a server farm, and you want to evaluate the performance of your load balancer, 
+	Webtrends can track page views for each server. To do so, populate the following META tag on all pages on each server: Example:
+	<meta name="WT.sv" content="My Server">
+	Defines the name of the machine that serves the web page. If you have two servers (Server1 and Server2), you would make two copies of the META 
+	tag and designate CONTENT=“Server1” for deployment to pages on the first server and CONTENT=“Server2” for deployment to the same pages on the 
+	second server. For a server farm, you can extract the value of the built-in server name and dynamically assign it to the META tag using 
+	server-side scripting. Example:
+	<meta name="WT.sv" content="Server1">
+	<meta name="WT.sv" content="Server2">
+	An Ad View occurs when a visitor views a page containing an ad. An ad is a link or graphic that contains an Ad Click parameter in the query 
+	portion of it's URL (https://tagbuilder.webtrends.com/Help/Miscellaneous/AdSearch.aspx?keepThis=true&TB_iframe=true&height=450&width=650) -->.
+	<meta name="wt.sv" content="">
+	<!-- Tracking Page Titles
+	You may want to modify a page title before sending it to Webtrends in the following cases:
+	You are dealing with dynamic content pages identified by URL parameters, and the page title represents the title of the base URL page rather than 
+	the dynamic content page.
+	Unless you modify the page titles, all pages have the same title in the reports.
+	All pages have been assigned the same title, for reasons of style or company policy.
+	Even though URLs are displayed in addition to page title, the entire URL cannot be depended upon to distinguish one page from another. Use 
+	server-side scripts to change the title to something that reflects the content of the pages so that you can identify them in reports. Next, pass 
+	the customized page titles to Webtrends, using the following META tag:
+	<META NAME="WT.ti" CONTENT="title">
+	Defines the name of the title for this page. -->
+	<meta name="wt.ti" content="">
 	
 	<!-- GLOBRIX -->
+	<meta name="globrix.instruction" content="">
+	<meta name="globrix.price" content="">
+	<meta name="globrix.postcode" content="">
+	<meta name="globrix.bedrooms" content="">
+	<meta name="globrix.bathrooms" content="">
+	<meta name="globrix.type" content="">
+	<meta name="globrix.condition" content="">
+	<meta name="globrix.features" content="">
+	<meta name="globrix.outsidespace" content="">
+	<meta name="globrix.parking" content="">
+	<meta name="globrix.period" content="">
+	<meta name="globrix.poa" content="">
+	<meta name="globrix.tenure" content="">
+	<meta name="globrix.underoffer" content="">
+	<meta name="globrix.priceproximity" content="">
+	<meta name="globrix.latitude" content="">
+	<meta name="globrix.longitude" content="">
 	
 	<!-- RUBY -->
+	<meta name="csrf-token" content="">
+	<meta name="csrf-param" content="">
 	
 	<!-- DUBLIN CORE TAGS -->
 	<!-- New Dublin Core nomenclature, you use "dcterms.tag" instead of old "dc.tag" form. We don't use every DC tag, only that we thought usefully.
 	You can read and extend full registered HTML5 meta name tag list in WHATWG wiki (http://wiki.whatwg.org/wiki/MetaExtensions) -->
-	<meta name="dcterms.title" lang="en" content="Title of website">
-	<meta name="dcterms.creator" content="Author of site">
-	<meta name="dcterms.subject" lang="en" content="HTML, HTML DOM, Meta Tags">
-	<meta name="dcterms.description" lang="en" content="Description of content">
-	<meta name="dcterms.publisher" content="Publisher of site">
-	<meta name="dcterms.contributor" content="Contributor of site">
-	<meta name="dcterms.date" content="2011-03-05">
-	<meta name="dcterms.type" content="Collection | Dataset | Event | Image | InteractiveResource | MovingImage | PhysicalObject | Service | Sound | StillImage | Text">
-	<meta name="dcterms.format" content="text/html | MIME">
-	<meta name="dcterms.identifier" content="/meta-tags/dublin/">
-	<meta name="dcterms.source" content="/meta-tags/">
-	<meta name="dcterms.language" content="en">
-	<meta name="dcterms.relation" content="/meta-tags/">
-	<meta name="dcterms.coverage" content="World | Local">
-	<meta name="dcterms.rights" content="/legal/terms-of-use.htm">
-	
-	<!-- GEO TAGS -->
+	<meta name="dc.date.issued" content="">
+	<meta name="dc.language" content="">
+	<meta name="dcterms.abstract" content="">
+	<meta name="dcterms.accessRights" content="">
+	<meta name="dcterms.accrualMethod" content="">
+	<meta name="dcterms.accrualPeriodicity" content="">
+	<meta name="dcterms.accrualPolicy" content="">
+	<meta name="dcterms.alternative" content="">
+	<meta name="dcterms.audience" content="">
+	<meta name="dcterms.available" content="">
+	<meta name="dcterms.bibliographicCitation" content="">
+	<meta name="dcterms.conformsTo" content="">
+	<meta name="dcterms.contributor" content="">
+	<meta name="dcterms.coverage" content="">
+	<meta name="dcterms.created" content="">
+	<meta name="dcterms.creator" content="">
+	<meta name="dcterms.date" content="">
+	<meta name="dcterms.dateAccepted" content="">
+	<meta name="dcterms.dateCopyrighted" content="">
+	<meta name="dcterms.dateSubmitted" content="">
+	<meta name="dcterms.description" content="">
+	<meta name="dcterms.educationLevel" content="">
+	<meta name="dcterms.extent" content="">
+	<meta name="dcterms.format" content="">
+	<meta name="dcterms.hasFormat" content="">
+	<meta name="dcterms.hasPart" content="">
+	<meta name="dcterms.hasVersion" content="">
+	<meta name="dcterms.instructionalMethod" content="">
+	<meta name="dcterms.isFormatOf" content="">
+	<meta name="dcterms.isPartOf" content="">
+	<meta name="dcterms.isReferencedBy" content="">
+	<meta name="dcterms.isReplacedBy" content="">
+	<meta name="dcterms.isRequiredBy" content="">
+	<meta name="dcterms.issued" content="">
+	<meta name="dcterms.isVersionOf" content="">
+	<meta name="dcterms.language" content="">
+	<meta name="dcterms.license" content="">
+	<meta name="dcterms.mediator" content="">
+	<meta name="dcterms.medium" content="">
+	<meta name="dcterms.modified" content="">
+	<meta name="dcterms.provenance" content="">
+	<meta name="dcterms.publisher" content="">
+	<meta name="dcterms.references" content="">
+	<meta name="dcterms.relation" content="">
+	<meta name="dcterms.replaces" content="">
+	<meta name="dcterms.requires" content="">
+	<meta name="dcterms.rights" content="">
+	<meta name="dcterms.rightsHolder" content="">
+	<meta name="dcterms.source" content="">
+	<meta name="dcterms.spatial" content="">
+	<meta name="dcterms.subject" content="">
+	<meta name="dcterms.tableOfContents" content="">
+	<meta name="dcterms.temporal" content="">
+	<meta name="dcterms.title" content="">
+	<meta name="dcterms.type" content="">
+	<meta name="dcterms.valid" content="">
+	<!-- GEO-TAGS -->
+	<meta name="geo.country" content="">
+	<meta name="geo.placename" content="">
+	<meta name="geo.position" content="">
+	<meta name="geo.region" content="">
+	<meta name="icbm" content="">
 </head>
 </html>
 		
