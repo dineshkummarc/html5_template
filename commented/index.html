@@ -1,0 +1,435 @@
+<!--Title: HTML5 template		
+	Creator: Mukli Krisztián
+	Subject: html5, website, template, base, development
+	Description: An initial html5-based site, optimized for most used functions. Usage: use the minimized version, this file can't use for theoretical
+	purposes, because it contains to much comments and other elements, it made for better understanding!
+	Publisher: Mukli Krisztián
+	Contributor: no contributors
+	Date: 2012.02.02.
+	Type: Text
+	Format: text/html
+	Identifier: HTML5_template
+	Source: http://www.w3schools.com
+			http://html5boilerplate.com
+			http://html5reset.org
+			http://kgyt.hu
+			http://meyerweb.com/eric/tools/css/reset/
+	Language: en
+	Relation: no relation
+	Coverage: World
+	Rights: public domain		
+-->
+<!-- Document Type Definiton -->
+<!-- IF YOU DON'T DELETE EVERY COMMENT BEFORE DOCTYPE LINE, INTERNET EXPLORER WILL GO INTO THE QUIRKS MODE !! -->
+<!DOCTYPE html>
+<!--
+(http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/)
+Conditional html-classes, this classes more effective than conditional css-rules, because every css-rules can be in one file. Declare 3 type of 
+css-classes, which concern the full html-site. This classes:
+	no-js for Modernizr.js (http://modernizr.github.com/Modernizr/annotatedsource.html)
+	old for old browsers
+	ie6, ie7, iem7, ie8, ie9 for specific version of Internet Explorer (http://themble.com/support/the-bones-header/)
+-->	
+<!-- HTML Language declaration: http://www.w3.org/International/questions/qa-http-and-lang.en.php -->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if lt IE 7 ]> <html class="no-js old ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js old ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7 ]> class="no-js old iem7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js old ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--HEAD-->
+<!--Mortaugh HTML5 Reset use id and data-template-set, for php-based sites i.e: Wordpress -->
+<!--<head id="www-sitename-com" data-template-set="html5-reset">-->
+<head>
+	<!-- Title of website -->
+	<title></title>
+	<!-- Charset: you use UTF-8 almost everything or in other cases you can use standard latin charset -->
+	<!-- IF YOU USE UTF-8 CHARSET, YOU SAVE YOUR FILES TO UTF-8 WITHOUT BOM AND IF YOU USE LATIN-1 OR 2, YOU SAVE TO ANSI !! -->
+	<!-- Latin-1 <meta charset="ISO-8859-1"> --> 
+	<!-- Latin-2 <meta charset="ISO-8859-2"> --> 
+	<meta charset="UTF-8">
+	
+	<!-- HTTP-EQUIV TAGS -->
+	<!-- Specifies the character encoding for the document, but using http-equiv is no longer the only way to specify the character set of an HTML 
+	document. You use meta charset instead of it, or both of them. -->
+	<!-- Latin-1 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"> -->
+	<!-- Latin-2 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-2"> -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- Specified the preferred style sheet to use. -->
+	<meta http-equiv="default-style" content="css/style.css">
+	<!-- Defines a time interval for the document to refresh itself.  The value "refresh" should be used carefully, as it takes the control of a page 
+	away from the user. Using "refresh" will cause a failure in W3C's Web Content Accessibility Guidelines. (http://www.w3.org/WAI/intro/wcag.php) -->
+	<!-- <meta http-equiv="refresh" content="300"> -->
+	
+	<!-- META TAGS
+	We use only proposed meta tags, which are validated by W3C validator. There are some new meta name tag, and some of them, which was 
+	valid in HTML4 or XHTML1.x, actually unusable with a valid HTML5 site. We recommend you don't use every meta tag, only that you think usefully.
+	You can read and extend full registered HTML5 meta name tag list in WHATWG wiki 
+	(http://wiki.whatwg.org/wiki/MetaExtensions) -->
+	
+	<!-- META NAME TAGS -->
+	<meta name="application-name" content="Specifies the name of the Web application that the page represents">
+	<meta name="author" content="Author of site">
+	<meta name="description" content="Description of content">
+	<meta name="designer" content="Designer's name">
+	<meta name="generator" content="Generator or editor software">
+	<meta name="keywords" content="HTML, HTML DOM, Meta Tags">
+	<meta name="publisher" content="Publisher's name">
+	<meta name="rating" content="all | children | youngs | senior">
+	<meta name="revisit-after" content="7 days | 14 days | 1 month | 2 months | 3 months | 1 year">
+	<meta name="rights-standard" content="pd | cc by-sa | cc by-nd | cc by-nc | cc by-nc-sa | cc by-nc-nd">
+	<meta name="robots" content="all | follow | index | noarchive | noindex | nofollow | none ">
+	
+	<!-- Company-related META NAME TAGS -->
+	<!-- As against general meta name tags, following meta tags related on companies -->
+	
+	<!-- ALEXA -->
+	<!-- Used to verify ownership of Alexa Search (http://www.alexa.com/faqs/?p=188) -->
+	<meta name="alexaverifyid" content="">
+	
+	<!-- BAIDUS -->
+	<!-- Synonym of robots for targeting Baidu only. (http://www.baidu.com/search/robots_english.html) -->
+	<meta name="baiduspider" content="">
+	
+	<!-- CITESEERX -->
+	<!-- Synonym of robots for targeting CiteSeerX only. (http://csxstatic.ist.psu.edu/submit) -->
+	<!-- IT SEEMS TO BE ACTUALLY INVALID, USE ROBOTS.TXT INSTEAD OF THIS METATAG -->
+	<!-- <meta name="citeseerxbot" content=""> -->
+	
+	<!-- EASYCMS -->
+	<!-- Object Title, where this is not the TITLE or H1 tag content, but the resource title (http://www.eibs.co.uk/reference/) -->
+	<meta name="es.title" content="">
+	
+	<!-- ESSAYDIRECTORY -->
+	<!-- Defines a custom description of websites listed in EssayDirectory.com 
+	(http://essaydirectory.com/privacy-terms/#EssayDirectory_MetaExtension) -->
+	<meta name="EssayDirectory" content="">
+	
+	<!-- OPENSEARCH -->
+	<!-- Used to identify the index of the first search result in the current set of search results. 
+	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) -->
+	<meta name="startIndex" content="">
+	<!-- Used to identify the number of search results returned per page. 
+	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) -->
+	<meta name="itemsPerPage" content="">
+	<!-- Used to identify the number of search results available for the current search. 
+	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) -->
+	<meta name="totalResults" content="">
+	
+	<!-- NORTON -->
+	<!-- Used to verify ownership of Website for Norton SafeWeb. (http://safeweb.norton.com/help/site_owners#verification_tips) -->
+	<meta name="norton-safeweb-site-verification" content="">
+	
+	<!-- RESTRICTED TO ADULTS LABEL -->
+	<!-- Rating tag is not same with earlier rating tag (which can use "all | children | youngs | seniors" content values. The Restricted to Adults 
+	label (RTA) provides a way for adult oriented websites to indicate that their content is off limits to children. RTA was introduced in 2006 and is 
+	currently used by a large number of adult web content providers. RTA is recognized by all major parental control filters. 
+	(http://www.rtalabel.org/index.php?content=howto) -->
+	<meta name="rating" content="RTA-5042-1996-1400-1577-RTA">
+	
+	<!-- SKYPE -->
+	<!-- Prevents the Skype browser extension from automatically seeking through the page and replacing telephone numbers (or any number the program's 
+	algorithm thinks is a telephone number) with its own custom presentation that allows direct invocation of the Skype program to call the telephone 
+	number. (http://skype.otherlinks.co.uk/page.asp?id=toolbar_number_formatting) -->
+	<!-- IT SEEMS TO BE ACTUALLY INVALID, YOU DON'T USE IT UNTIL IT BECOME VALIDABLE -->
+	<!-- <meta name="skype_toolbar" content="skype_toolbar_parser_compatible"> -->
+	
+	<!-- YAHOO -->
+	<!-- Used to verify ownership for Yahoo! Site Explorer (http://help.yahoo.com/l/us/yahoo/search/siteexplorer/siteexplorer-06.html) -->
+	<meta name="y_key" content="">
+	<!-- Synonym of robots for targeting Yahoo! only. (http://help.yahoo.com/l/au/yahoo7/search/indexing/indexing-11.html) -->
+	<meta name="slurp" content="">
+	
+	<!-- TEOMA, ASK.COM -->
+	<!-- Synonym of robots for targeting Teoma and Ask.com only. (http://about.ask.com/en/docs/about/webmasters.shtml) -->
+	<meta name="teoma" content="">
+	
+	<!-- YANDEX -->
+	<!-- Used to verify ownership for Yandex Webmaster. (http://help.yandex.ru/webmaster/?id=995300#995356) -->
+	<meta name="yandex-verification" content="">
+	
+	<!-- HEALTH CANADA WEB METADATA APPLICATION PROFILE MARCH 2009 -->
+	<!-- The date a resource is scheduled for review by content creator in order to determine if it should be archived, updated or retained as is. 
+	(http://www.hc-sc.gc.ca/home-accueil/alt_formats/pacrb-dgapcr/pdf/Metadata_Application_Profile_2009.pdf) -->
+	<meta name="review_date" content="">
+	<!-- The date used to indicate that the Metadata has been prepared and/or reviewed and approved by the Metadata Unit. Its purpose is administrative. 
+	(Used by "Autonomy".) (http://www.hc-sc.gc.ca/home-accueil/alt_formats/pacrb-dgapcr/pdf/Metadata_Application_Profile_2009.pdf) -->
+	<meta name="meta_date" content="">
+	
+	<!-- MOBILE OPTIMIZATION -->
+	<!-- Denotes handheld-friendly content (http://learnthemobileweb.com/tag/handheldfriendly/)
+	The value of the META tag is “true” for mobile markup and “false” for desktop-optimized HTML. -->
+	<meta name="HandheldFriendly" content="true | false">
+	<!-- Denotes content optimized for mobile browsers (http://learnthemobileweb.com/tag/mobileoptimized/)
+	Smartphone - content="176"
+	Pocker PC - content="240"
+	Pocket PC with high DPI - content="480"
+	The suggested default setting is that of a Pocket PC or 240. -->
+	<meta name="MobileOptimized" content="176 | 240 | 480">
+	
+	<!-- MARKOSWEB -->
+	<!-- Used to verify ownership of Markosweb.com (http://www.markosweb.com/help/ownership/) -->
+	<!-- IT SEEMS TO BE ACTUALLY INVALID -->
+	<!-- <meta name="markosweb.com/validation" content=""> -->	
+
+	<!-- APPLE -->
+	<!-- Sets whether a web application runs in full-screen mode. If content is set to yes, the web application runs in full-screen mode; otherwise, it 
+	does not. The default behavior is to use Safari to display web content. 
+	https://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html) -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Sets the style of the status bar for a web application. This meta tag has no effect unless you first specify full-screen mode as described in “apple-mobile-web-app-capable.”
+	If content is set to default, the status bar appears normal. If set to black, the status bar has a black background. If set to black-translucent, the 
+	status bar is black and translucent. If set to default or black, the web content is displayed below the status bar. If set to black-translucent, the 
+	web content is displayed on the entire screen, partially obscured by the status bar. The default value is default. -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default | black | black-translucent">
+	<!-- Enables or disables automatic detection of possible phone numbers in a webpage in Safari on iOS. By default, Safari on iOS detects any string 
+	formatted like a phone number and makes it a link that calls the number. Specifying telephone=no disables this feature. -->
+	<meta name="format-detection" content="telephone=no">
+	<!--  Mobile Viewport Fix
+	https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
+	davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<!-- GOOGLE -->
+	<!-- Used to verify ownership for Webmaster Tools. (http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=79812) -->
+	<meta name="google-site-verification" content="">
+	<!-- Synonym of robots for targeting Googlebot only. (http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=93710) -->
+	<meta name="googlebot" content="">
+	<!-- Legacy verification for Google Sitemaps. (http://sitemaps.blogspot.com/2006/05/more-about-meta-tag-verification.html -->
+	<meta name="verify-v1" content="">
+	
+	<!-- MICROSOFT -->
+	<!-- The "application-name" metadata defines the name of the Pinned Site application instance. This is the name that appears in a tooltip when 
+	hovering over the Pinned Site button on the Windows 7 taskbar. The application name is also appended to the window title of the Pinned Site 
+	application instance. -->
+	<meta name="application-name" content="">
+	<!-- Jump List items act as entry points into the website even when the browser is not running. A Jump List can contain commonly used destinations
+	and tasks. Some items apply to the whole site, and some apply only to specific users. 
+	(http://msdn.microsoft.com/en-us/library/gg491725(v=vs.85).aspx) -->
+	<meta name="msapplication-task" content="">
+	<!-- The "msapplication-starturl" metadata contains the root URL of the application. The start URL can be fully qualified, or relative to the current 
+	document. Only HTTP and HTTPS protocols are allowed. If this element is missing, the address of the current page is used instead. 
+	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-starturl" content="">
+	<!-- The "msapplication-tooltip" metadata provides additional tooltip text that appears when you hover over the Pinned Site shortcut in the Windows 
+	Start menu or on the desktop. (http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-tooltip" content="">
+	<!-- The "msapplication-navbutton-color" metadata define the custom color of the Back and Forward buttons in the Pinned Site browser window. Any named 
+	color, or hex color value is valid. (http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-navbutton-color" content="">
+	<!-- The "msapplication-window" metadata sets the initial size of the Pinned Site window when it is launched for the first time. However, if the 
+	user adjusts the size of the window, the Pinned Site retains the new dimensions when it is launched again. The following properties can be used in
+	the value of the content attribute:
+	width - The window width in pixels. The minimum value is 800.
+	height - The window height in pixels. The minimum value is 600.
+	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) -->
+	<meta name="msapplication-window" content="">
+	<!-- Place this element between tasks to place a visible line in the Jump List menu. The separators must be made unique by declaring 
+	content="[unique value]" if you have more than one. -->
+	<!-- IT SEEMS TO BE ACTUALLY INVALID -->
+	<!-- <meta name="msapplication-task-separator" content=""> -->
+	<!-- One of the verification elements used by Bing. (http://onlinehelp.microsoft.com/en-us/bing/hh204490.aspx) -->
+	<meta name="msvalidate.01" content="">
+	
+	<!-- WEB-TRENDS -->
+	<!-- http://product.webtrends.com/WRC/OnDemand/ResourceCenter/rc/Library/PDF/IGOD/WebTrendsAnalyticsOnDemandImplementationGuide.pdf -->
+	<!-- Name of the Content Group
+	Used to configure the appropriate Webtrends advanced feature. These are just some of the more popular ones. These appear in your META tags. – 
+	showing you the web page, the source (meta tag), the log files entry and the subsequent WT report. -->
+	<meta name="wt.cg_n" content="">
+	<!-- Name of Content Sub-Group
+	Used to configure the appropriate Webtrends advanced feature. These are just some of the more popular ones. These appear in your META tags. – 
+	showing you the web page, the source (meta tag), the log files entry and the subsequent WT report. -->
+	<meta name="wt.cg_s" content="">
+	<!-- Advertising Click parameter
+	When a visitor to your site clicks on an ad, that action is referred to as an Ad Click. The following META tag tracks advertising clicks:
+	<META NAME="WT.ac" CONTENT="name">
+	Defines the name of the advertisement clicked to reach a particular web page. The Ad Click must contain an external redirect back to the client. 
+	The redirect needs to include the necessary code to generate a hit to the SDC server. You can designate multiple Advertising Clicks using 
+	semicolons. Examples:
+	<a href="file111.html?WT.ac=CONTENT111">
+	<a href="file222.html?WT.ac=CONTENT222">
+	The name of the advertisement clicked to reach a particular web page. To capture this information with DCS, the Advertising Click must contain an 
+	external redirect back to the client. The redirect needs to
+	include the necessary code to generate a hit to the DCS. The maximum length for each name is 64 bytes. -->
+	<meta name="wt.ac" content="">
+	<!-- Advertising View parameter
+	Visitors often view advertisements that they do not necessarily click on. You can use On-Site Advertising to determine the number of visitors to 
+	your web site who view particular ads. With this feature you can produce advertising reports for each of your clients. If you are selling 
+	advertising space on your web site, for example, you can collect traffic statistics to help determine pricing schedules. An Ad View occurs when a 
+	visitor views a page containing an ad. An ad is a link or graphic that contains an Ad Click parameter in the query portion of it's URL. -->
+	<meta name="wt.ad" content="">
+	<!-- Identifies the ID of the marketing campaign
+	To attract new students, a university launches a marketing campaign by sending recruitment email to all graduating high school seniors in a 
+	metropolitan area. The email links to a special landing page in the university’s web site, containing the following META tag to track marketing 
+	campaigns. Example:
+	<META NAME="WT.mc_id" CONTENT="1X2GG34">
+	You may use this parameter on the URL. Example:
+	<a href="link?WT.mc_id=1X2GG34">
+	The Campaign ID 1X2GG34 represents recruits to be contacted by email -->
+	<meta name="wt.mc_id" content="">
+	<!-- Tracking Servers parameter
+	If your site is hosted on multiple servers, a server cluster, or a server farm, and you want to evaluate the performance of your load balancer, 
+	Webtrends can track page views for each server. To do so, populate the following META tag on all pages on each server: Example:
+	<meta name="WT.sv" content="My Server">
+	Defines the name of the machine that serves the web page. If you have two servers (Server1 and Server2), you would make two copies of the META 
+	tag and designate CONTENT=“Server1” for deployment to pages on the first server and CONTENT=“Server2” for deployment to the same pages on the 
+	second server. For a server farm, you can extract the value of the built-in server name and dynamically assign it to the META tag using 
+	server-side scripting. Example:
+	<meta name="WT.sv" content="Server1">
+	<meta name="WT.sv" content="Server2">
+	An Ad View occurs when a visitor views a page containing an ad. An ad is a link or graphic that contains an Ad Click parameter in the query 
+	portion of it's URL (https://tagbuilder.webtrends.com/Help/Miscellaneous/AdSearch.aspx?keepThis=true&TB_iframe=true&height=450&width=650) -->.
+	<meta name="wt.sv" content="">
+	<!-- Tracking Page Titles
+	You may want to modify a page title before sending it to Webtrends in the following cases:
+	You are dealing with dynamic content pages identified by URL parameters, and the page title represents the title of the base URL page rather than 
+	the dynamic content page.
+	Unless you modify the page titles, all pages have the same title in the reports.
+	All pages have been assigned the same title, for reasons of style or company policy.
+	Even though URLs are displayed in addition to page title, the entire URL cannot be depended upon to distinguish one page from another. Use 
+	server-side scripts to change the title to something that reflects the content of the pages so that you can identify them in reports. Next, pass 
+	the customized page titles to Webtrends, using the following META tag:
+	<META NAME="WT.ti" CONTENT="title">
+	Defines the name of the title for this page. -->
+	<meta name="wt.ti" content="">
+	
+	<!-- GLOBRIX -->
+	<!-- (http://content.globrix.com/web-tools/8-technical-guide/74-what-are-globrix-meta-tags-and-how-can-i-use-them) -->
+	<!-- Globrix property information: Property to Buy or Rent -->
+	<meta name="globrix.instruction" content="">
+	<!-- Globrix property information: Price for the property -->
+	<meta name="globrix.price" content="">
+	<!-- Globrix property information: Postcode of the property -->
+	<meta name="globrix.postcode" content="">
+	<!-- Globrix property information: Number of bedrooms the property has -->
+	<meta name="globrix.bedrooms" content="">
+	<!-- Globrix property information: Number of bathrooms the property has -->
+	<meta name="globrix.bathrooms" content="">
+	<!-- Globrix property information: Type of property e.g. 'semi-detatched house' -->
+	<meta name="globrix.type" content="">
+	<!-- Globrix property information: Condition of the property e.g. 'renovated' -->
+	<meta name="globrix.condition" content="">
+	<!-- Globrix property information: Features of the property e.g. 'double glazing' -->
+	<meta name="globrix.features" content="">
+	<!-- Globrix property information: External features of the property e.g. 'garden' -->
+	<meta name="globrix.outsidespace" content="">
+	<!-- Globrix property information: Parking available for property e.g. 'parking for 2 cars' -->
+	<meta name="globrix.parking" content="">
+	<!-- Globrix property information: Period of the property e.g. 'victorian terrace' -->
+	<meta name="globrix.period" content="">
+	<!-- Globrix property information: If the property price is only available on application -->
+	<meta name="globrix.poa" content="">
+	<!-- Globrix property information: The tenure of the property e.g. 'leasehold' -->
+	<meta name="globrix.tenure" content="">
+	<!-- Globrix property information: Indicates if the property is under offer -->
+	<meta name="globrix.underoffer" content="">
+	<!-- Globrix property information: The region of the attached price e.g. 'guide price of' -->
+	<meta name="globrix.priceproximity" content="">
+	<!-- Globrix property information: The latitude of the property -->
+	<meta name="globrix.latitude" content="">
+	<!-- Globrix property information: The longitude of the property -->
+	<!-- IT SEEMS TO BE ACTUALLY INVALID -->
+	<!-- <meta name="globrix.longitude" content=""> -->
+	
+	<!-- RUBY -->
+	<!-- (http://apidock.com/rails/ActionView/Helpers/CsrfHelper/csrf_meta_tag)
+	(http://www.glrzad.com/) -->
+	<!-- Cross-site request forgery protection parameter for Ruby on Rails -->
+	<meta name="csrf-token" content="">
+	<!-- Cross-site request forgery protection token for Ruby on Rails  -->
+	<meta name="csrf-param" content="">
+	
+	<!-- DUBLIN CORE TAGS -->
+	<!-- New Dublin Core nomenclature, you use "dcterms.tag" instead of old "dc.tag" form. We recommend you don't use every DC tag, only that you 
+	thought usefully. (http://dublincore.org/documents/dcmi-terms/) -->
+	<meta name="dc.date.issued" content="Date of publication for Google News. The format of the content is YYYY-MM-DD or YYYY-MM-DDThh:mm:ssTZD.">
+	<meta name="dc.language" content="A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646">
+	<meta name="dcterms.abstract" content="A summary of the resource.">
+	<meta name="dcterms.accessRights" content="Information about who can access the resource or an indication of its security status.">
+	<meta name="dcterms.accrualMethod" content="The method by which items are added to a collection">
+	<meta name="dcterms.accrualPeriodicity" content="The frequency with which items are added to a collection.">
+	<meta name="dcterms.accrualPolicy" content="The policy governing the addition of items to a collection.">
+	<meta name="dcterms.alternative" content="An alternative name for the resource.">
+	<meta name="dcterms.audience" content="A class of entity for whom the resource is intended or useful.">
+	<meta name="dcterms.available" content="Date (often a range) that the resource became or will become available.">
+	<meta name="dcterms.bibliographicCitation" content="A bibliographic reference for the resource.">
+	<meta name="dcterms.conformsTo" content="An established standard to which the described resource conforms.">
+	<meta name="dcterms.contributor" content="An entity responsible for making contributions to the content of the resource.">
+	<meta name="dcterms.coverage" content="The spatial or temporal topic of the resource, the spatial applicability of the resource, or the 
+	jurisdiction under which the resource is relevant.">
+	<meta name="dcterms.created" content="Date of creation of the resource.">
+	<meta name="dcterms.creator" content="An entity primarily responsible for making the resource. Examples of a Creator include a person, an 
+	organization, or a service.">
+	<meta name="dcterms.date" content="A point or period of time associated with an event in the lifecycle of the resource.">
+	<meta name="dcterms.dateAccepted" content="Date of acceptance of the resource.">
+	<meta name="dcterms.dateCopyrighted" content="Date of copyright.">
+	<meta name="dcterms.dateSubmitted" content="Date of submission of the resource.">
+	<meta name="dcterms.description" content="An account of the resource. Description may include but is not limited to: an abstract, a table of 
+	contents, a graphical representation, or a free-text account of the resource.">
+	<meta name="dcterms.educationLevel" content="A class of entity, defined in terms of progression through an educational or training context, for 
+	which the described resource is intended.">
+	<meta name="dcterms.extent" content="The size or duration of the resource.">
+	<meta name="dcterms.format" content="The file format, physical medium, or dimensions of the resource.">
+	<meta name="dcterms.hasFormat" content="A related resource that is substantially the same as the pre-existing described resource, but in another 
+	format.">
+	<meta name="dcterms.hasPart" content="A related resource that is included either physically or logically in the described resource.">
+	<meta name="dcterms.hasVersion" content="A related resource that is a version, edition, or adaptation of the described resource.">
+	<meta name="dcterms.identifier" content="An unambiguous reference to the resource within a given context.">
+	<meta name="dcterms.instructionalMethod" content="A process used to engender knowledge, attitudes and skills, that the described resource is 
+	designed to support.">
+	<meta name="dcterms.isFormatOf" content="A related resource that is substantially the same as the described resource, but in another format.">
+	<meta name="dcterms.isPartOf" content="A related resource in which the described resource is physically or logically included.">
+	<meta name="dcterms.isReferencedBy" content="A related resource that references, cites, or otherwise points to the described resource.">
+	<meta name="dcterms.isReplacedBy" content="A related resource that supplants, displaces, or supersedes the described resource.">
+	<meta name="dcterms.isRequiredBy" content="A related resource that requires the described resource to support its function, delivery, or 
+	coherence.">
+	<meta name="dcterms.issued" content="Date of formal issuance (e.g., publication) of the resource. (DC doesn't spec a date format but the 
+	established practice is YYYY-MM-DD.)">
+	<meta name="dcterms.isVersionOf" content="A related resource of which the described resource is a version, edition, or adaptation.">
+	<meta name="dcterms.language" content="A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646">
+	<meta name="dcterms.license" content="A legal document giving official permission to do something with the resource.">
+	<meta name="dcterms.mediator" content="An entity that mediates access to the resource and for whom the resource is intended or useful.">
+	<meta name="dcterms.medium" content="The material or physical carrier of the resource.">
+	<meta name="dcterms.modified" content="Date on which the resource was changed. (DC doesn't spec a date format but the established practice is 
+	YYYY-MM-DD.)">
+	<meta name="dcterms.provenance" content="A statement for any changes in ownership and custody of the resource since its creation that are 
+	significant for its authenticity, integrity, and interpretation.">
+	<meta name="dcterms.publisher" content="An entity responsible for making the resource available.">
+	<meta name="dcterms.references" content="A related resource that is referenced, cited, or otherwise pointed to by the described resource.">
+	<meta name="dcterms.relation" content="A related resource.">
+	<meta name="dcterms.replaces" content="A related resource that is supplanted, displaced, or superseded by the described resource.">
+	<meta name="dcterms.requires" content="A related resource that is required by the described resource to support its function, delivery, or 
+	coherence.">
+	<meta name="dcterms.rights" content="Information about rights held in and over the resource. 
+	copyright | gnu gplv3 | gnu lgplv3 | gnu agplv3 | gnu fdlv1.3 | cc by-sa | cc by-nd | cc by-nc | cc by-nc-sa | cc by-nc-nd | pd">
+	<meta name="dcterms.rightsHolder" content="A person or organization owning or managing rights over the resource.">
+	<meta name="dcterms.source" content="A related resource from which the described resource is derived.">
+	<meta name="dcterms.spatial" content="Spatial characteristics of the resource.">
+	<meta name="dcterms.subject" content="The topic of the resource.">
+	<meta name="dcterms.tableOfContents" content="A list of subunits of the resource.">
+	<meta name="dcterms.temporal" content="Temporal characteristics of the resource.">
+	<meta name="dcterms.title" content="A name given to the resource.">
+	<meta name="dcterms.type" content="The nature or genre of the resource.">
+	<meta name="dcterms.valid" content="Date (often a range) of validity of a resource.">
+	
+	<!-- GEO-TAGS -->
+	<!-- (http://www.geo-tag.de) -->
+	<!-- (http://www.syndic8.com/help_metadata.php) -->
+	<meta name="geo.country" content="Case-insensitive ISO 3166-1 alpha-2 code of a country to which the page is related to.">
+	<!-- (http://tools.ietf.org/html/draft-daviel-html-geo-tag-08) -->
+	<meta name="geo.placename" content="Defines name of geographic place to which page is related to.">
+	<!-- (http://tools.ietf.org/html/draft-daviel-html-geo-tag-08) -->
+	<meta name="geo.position" content="Defines geographic position to which page is related to">
+	<!-- (http://en.wikipedia.org/wiki/ISO_3166) -->
+	<meta name="geo.region" content="Defines name of geographic region to which page is related to. Content is specified by ISO-3166.">
+	<!-- (http://geourl.org/add.html) -->
+	<meta name="icbm" content="Defines geographic position to which page is related to. The acronym stands for ICBM Intercontinental Ballistic Missile
+	- an old, humorous allusion to the possible use of such coordinates.">
+</head>
+</html>
+		
