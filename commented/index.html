@@ -32,13 +32,18 @@ css-classes, which concern the full html-site. This classes:
 -->	
 <!-- HTML Language declaration: http://www.w3.org/International/questions/qa-http-and-lang.en.php -->
 <!-- If you use the open graph protocoll, you need: <html prefix="og: http://ogp.me/ns#"> -->
-<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!-- manifest.appcache: h5bp.com/d/Offline
+	http://manifest-validator.com/
+	http://www.html5rocks.com/en/tutorials/appcache/beginner/
+	http://appcachefacts.info/
+	http://www.w3.org/TR/offline-webapps/
+ -->
 <!--[if lt IE 7 ]> <html class="no-js old ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js old ie7" lang="en"> <![endif]-->
 <!--[if IEMobile 7 ]> class="no-js old iem7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js old ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]]><!--> <html class="no-js" lang="en" manifest="appcahce/manifest.appcache"> <!--<![endif]-->
 <!--HEAD-->
 <!--Mortaugh HTML5 Reset use id and data-template-set, for php-based sites i.e: Wordpress -->
 <!--<head id="www-sitename-com" data-template-set="html5-reset">-->
