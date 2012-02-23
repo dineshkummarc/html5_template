@@ -1,0 +1,14 @@
+/* TEAM */
+	<your title>: <your name>
+	Site: 
+	Twitter: 
+	Location: 
+
+/* THANKS */
+	Names (& URL): 
+
+/* SITE */
+	Last update:
+	Standards: 
+	Components: 
+	Software:

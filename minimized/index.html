@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!-- If you use the open graph protocoll, you need: <html prefix="og: http://ogp.me/ns#"> -->
 <!--[if lt IE 7 ]> <html class="no-js old ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js old ie7" lang="en"> <![endif]-->
 <!--[if IEMobile 7 ]> class="no-js old iem7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js old ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]]><!--> <html class="no-js" lang="en" manifest="appcahce/manifest.appcache"> <!--<![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]]><!--> <html class="no-js" lang="en" manifest="appcache/manifest.appcache"> <!--<![endif]-->
 <head>
 	<title></title> 
 	<meta charset="UTF-8">
+	<!-- <meta http-equiv="x-dns-prefetch-control" content="off"> -->
+	<!-- <link rel="dns-prefetch" href="//example.com"> -->
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta http-equiv="default-style" content="css/style.css">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+	<!-- <meta http-equiv="imagetoolbar" content="false"> -->
 	<!-- META NAME TAGS -->
 	<meta name="application-name" content="Specifies the name of the Web application that the page represents">
 	<meta name="author" content="Author of site">
@@ -199,6 +202,26 @@
 	<meta name="geo.region" content="Defines name of geographic region to which page is related to. Content is specified by ISO-3166.">
 	<meta name="icbm" content="Defines geographic position to which page is related to. The acronym stands for ICBM Intercontinental Ballistic Missile
 	- an old, humorous allusion to the possible use of such coordinates.">
+	
+	<!-- LINKS -->
+	<!-- Direct search spiders to your sitemap -->
+	<!-- <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"> -->
+	<!-- Browser Search plugin -->
+	<link rel="search" title="title" type="application/opensearchdescription+xml" href="/search.xml">
+	<!-- Canonical URL -->
+	<link rel="canonical" href="html5-template.com">
+	<!-- Official shortlink -->
+	<link rel="shortlink" href="h5temp.com">
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+	<!-- ATOM -->
+	<link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
+	<!-- Pingback -->
+	<link rel="pingback" href="pingbackservice.com">
+	<!-- humans.txt -->
+	<!-- http://humanstxt.org -->
+	<link rel="author" href="/humans.txt">
+	
 </head>
 </html>
 		
