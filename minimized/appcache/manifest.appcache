@@ -8,7 +8,7 @@ CACHE MANIFEST
 FALLBACK:
 / /offline.html
 
-# All other resources (e.g. sites) require the user to be online. 
+# All other resources (e.g. sites) require the user to be online.
 NETWORK:
 *
 
