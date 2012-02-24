@@ -312,7 +312,7 @@ css-classes, which concern the full html-site. This classes:
 	<meta name="WT.sv" content="Server1">
 	<meta name="WT.sv" content="Server2">
 	An Ad View occurs when a visitor views a page containing an ad. An ad is a link or graphic that contains an Ad Click parameter in the query 
-	portion of it's URL (https://tagbuilder.webtrends.com/Help/Miscellaneous/AdSearch.aspx?keepThis=true&TB_iframe=true&height=450&width=650) -->.
+	portion of it's URL (https://tagbuilder.webtrends.com/Help/Miscellaneous/AdSearch.aspx?keepThis=true&TB_iframe=true&height=450&width=650) -->
 	<meta name="wt.sv" content="">
 	<!-- Tracking Page Titles
 	You may want to modify a page title before sending it to Webtrends in the following cases:
@@ -480,6 +480,27 @@ css-classes, which concern the full html-site. This classes:
 	- an old, humorous allusion to the possible use of such coordinates.">
 	
 	<!-- LINKS -->
+	<!-- Firstly we adding some explanation for links, after addng some usable example. -->
+	<!-- Links to an alternate version of the document (i.e. print page, translated or mirror) -->
+	<link rel="alternate" href="example.com">
+	<!-- Links to the author of the document -->
+	<link rel="author" href="example.com">
+	<!-- Links to a help document -->
+	<link rel="help" href="example.com">
+	<!-- Imports an icon to represent the document -->
+	<link rel="icon" href="example.com">
+	<!-- Links to copyright information for the document -->
+	<link rel="license" href="example.com">
+	<!-- Indicates that the document is a part of a series, and that the next document in the series is the referenced document -->
+	<link rel="next" href="example.com">
+	<!-- Specifies that the target resource should be cached -->
+	<link rel="prefetch" href="example.com">
+	<!-- Indicates that the document is a part of a series, and that the previous document in the series is the referenced document -->
+	<link rel="prev" href="example.com">
+	<!-- Links to a search tool for the document -->
+	<link rel="search" href="example.com">
+	<!-- URL to a style sheet to import -->
+	<link rel="stylesheet" href="example.com">
 	
 	<!-- Direct search spiders to your sitemap -->
 	<!-- It seems to be invalid, sitemap keyword is not registered -->
@@ -514,6 +535,20 @@ css-classes, which concern the full html-site. This classes:
 	<!-- http://humanstxt.org -->
 	<link rel="author" href="/humans.txt">
 	
+	<!-- Icons -->
+	<!-- For old IE type="image/vnd.microsoft.icon" isn't recommended, use instead type="image/x-icon" or nothing. -->
+	<link rel="shortcut icon" href="icons/favicon.ico" type="image/vnd.microsoft.icon">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->		 
+	<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
 </head>
+<body>
+</body>
 </html>
 		
