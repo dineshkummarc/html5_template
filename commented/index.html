@@ -47,7 +47,7 @@ css-classes, which concern the full html-site. This classes:
 <!--[if IEMobile 7 ]> class="no-js old iem7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js old ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]]><!--> <html class="no-js" lang="en" manifest="appcache/manifest.appcache"> <!--<![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]><!--> <html class="no-js" lang="en" manifest="appcache/manifest.appcache"> <!--<![endif]-->
 <!--HEAD-->
 <!--Mortaugh HTML5 Reset use id and data-template-set, for php-based sites i.e: Wordpress -->
 <!--<head id="www-sitename-com" data-template-set="html5-reset">-->
@@ -535,18 +535,141 @@ css-classes, which concern the full html-site. This classes:
 	<!-- http://humanstxt.org -->
 	<link rel="author" href="/humans.txt">
 	
-	<!-- Icons -->
+	<!-- ICONS -->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 	<!-- For old IE type="image/vnd.microsoft.icon" isn't recommended, use instead type="image/x-icon" or nothing. -->
-	<link rel="shortcut icon" href="icons/favicon.ico" type="image/vnd.microsoft.icon">
+	<!--[if !(IE)]><!--> <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon"> <!--<![endif]-->
+	<!--[if IE]><link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon"><![endif]-->
 	<!-- This is the traditional favicon.
 		 - size: 16x16 or 32x32
 		 - transparency is OK
 		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->		 
-	<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon.png">
 	<!-- The is the icon for iOS's Web Clip.
 		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
 		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
 		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+		 
+	<!-- STYLE -->
+	<base href="www.website.com" />
+	<link rel="stylesheet" href="css/style.css"  type="text/css" />
+	<!-- Lightbox-stylesheet, see below the scripts-->
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+	<!-- Syntaxhighlighter-stylesheets, see below the scripts -->
+	<!-- Include *at least* the core style and default theme, and/or you uncomment what you want use -->
+	<link rel="stylesheet" href="css/syntaxhighlighter/shcore.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcoredefault.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcoredjango.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcoreeclipse.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcoreemacs.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcorefadetogrey.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcoremdultra.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcoremidnight.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shcorerdark.css" type="text/css" /> -->
+	<link rel="stylesheet" href="css/syntaxhighlighter/shthemedefault.css" type="text/css" /> 
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthemedjango.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthemeeclipse.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthemeemacs.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthemefadetogrey.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthememdultra.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthemedefault.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthememidnight.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthemerdark.css" type="text/css" /> -->
+	
+	<!-- SCRIPTS -->
+	<!-- You can add your javascript in to your site before body (classic way) or after body for faster loading. We recommend the classic way, but it is 
+	your choice. We add some js for this template, and you can add (or remove) your own scripts too. -->
+	<!-- Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites. 
+	(http://www.modernizr.com/)-->
+	<script type='text/javascript' src='js/modernizr-2.5.3.js'></script>
+	<!-- jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for 
+	rapid web development. jQuery is designed to change the way that you write JavaScript. (http://jquery.com/) -->
+	<script type='text/javascript' src='js/jquery-1.7.1.min.js'></script>
+	<!-- Prototype is a JavaScript Framework that aims to ease development of dynamic web applications. (http://www.prototypejs.org/) -->
+	<script type="text/javascript" src="js/prototype-1.7.js"></script>
+	<!-- script.aculo.us is a set of JavaScript libraries to enhance the user interface of web sites. It provides an visual effects engine, a drag and drop
+	library (including sortable lists), a couple of controls (Ajax-based autocompletion, in-place editing, sliders) and more.
+	(http://script.aculo.us/) -->
+	<script type="text/javascript" src="js/scriptaculous-1.9.0.js?load=effects,builder"></script>
+	<!-- Lightbox is a simple, unobtrusive script used to overlay images on the current page. It's a snap to setup and works on all modern browsers.
+	(http://www.lokeshdhakar.com/projects/lightbox2/) -->
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<!-- SyntaxHighlighter is a fully functional self-contained code syntax highlighter developed in JavaScript.
+	(http://alexgorbatchev.com/SyntaxHighlighter/ -->)
+	<script type="text/javascript" src="js/syntaxhighlighter/shcore.js"></script>
+	<!-- At least one brush, here we choose JS. You need to include a brush for every language you want to highlight -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushapplescript.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushas3.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushbash.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushcoldfusion.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushcpp.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushcsharp.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushcss.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushdelphi.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushdiff.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrusherlang.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushgroovy.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushjava.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushjavafx.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushjscript.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushperl.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushphp.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushplain.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushpowershell.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushpython.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushruby.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushsass.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushscala.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushsql.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushvb.js"></script> -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shbrushxml.js"></script> -->	
+	<!-- Syntaxhighlighter autoloader: SyntaxHighlighter comes with almost 30 brushes out of the box. One of the most requested feature has been the 
+	ability to dynamically load them without having to load them all on the same page. Version 3 addresses this problem with with the new autoloader 
+	script. Setting autoloader up is as simple as adding shAutoloader.js file to your page and telling autoloader where your brushes are.
+	(http://alexgorbatchev.com/SyntaxHighlighter/manual/api/autoloader.html) -->
+	<!-- <script type="text/javascript" src="js/syntaxhighlighter/shautoloader.js"></script> -->
+	<!-- <script type="text/javascript">
+	SyntaxHighlighter.autoloader(
+	'applescript            js/syntaxhighlighter/shbrushapplescript.js',
+	'actionscript3 as3      js/syntaxhighlighter/shbrushas3.js',
+	'bash shell             js/syntaxhighlighter/shbrushbash.js',
+	'coldfusion cf          js/syntaxhighlighter/shbrushcoldfusion.js',
+	'cpp c                  js/syntaxhighlighter/shbrushcpp.js',
+	'c# c-sharp csharp      js/syntaxhighlighter/shbrushcsharp.js',
+	'css                    js/syntaxhighlighter/shbrushcss.js',
+	'delphi pascal          js/syntaxhighlighter/shbrushdelphi.js',
+	'diff patch pas         js/syntaxhighlighter/shbrushdiff.js',
+	'erl erlang             js/syntaxhighlighter/shbrusherlang.js',
+	'groovy                 js/syntaxhighlighter/shbrushgroovy.js',
+	'java                   js/syntaxhighlighter/shbrushjava.js',
+	'jfx javafx             js/syntaxhighlighter/shbrushjavafx.js',
+	'js jscript javascript  js/syntaxhighlighter/shbrushjscript.js',
+	'perl pl                js/syntaxhighlighter/shbrushperl.js',
+	'php                    js/syntaxhighlighter/shbrushphp.js',
+	'text plain             js/syntaxhighlighter/shbrushplain.js',
+	'py python              js/syntaxhighlighter/shbrushpython.js',
+	'ruby rails ror rb      js/syntaxhighlighter/shbrushruby.js',
+	'sass scss              js/syntaxhighlighter/shbrushsass.js',
+	'scala                  js/syntaxhighlighter/shbrushscala.js',
+	'sql                    js/syntaxhighlighter/shbrushsql.js',
+	'vb vbnet               js/syntaxhighlighter/shbrushvb.js',
+	'xml xhtml xslt html    js/syntaxhighlighter/shbrushxml.js'
+	);</script> -->
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<!-- Google Analitycs -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </head>
 <body>
 </body>
