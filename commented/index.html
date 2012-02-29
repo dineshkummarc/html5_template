@@ -577,6 +577,7 @@ css-classes, which concern the full html-site. This classes:
 	<!-- <link rel="stylesheet" href="css/syntaxhighlighter/shthemerdark.css" type="text/css" /> -->
 	
 	<!-- SCRIPTS -->
+	<!-- Javascript libraries -->
 	<!-- You can add your javascript in to your site before body (classic way) or after body for faster loading. We recommend the classic way, but it is 
 	your choice. We add some js for this template, and you can add (or remove) your own scripts too. -->
 	<!-- Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites. 
@@ -591,6 +592,7 @@ css-classes, which concern the full html-site. This classes:
 	library (including sortable lists), a couple of controls (Ajax-based autocompletion, in-place editing, sliders) and more.
 	(http://script.aculo.us/) -->
 	<script type="text/javascript" src="js/scriptaculous-1.9.0.js?load=effects,builder"></script>
+	<!-- Other scripts -->
 	<!-- Lightbox is a simple, unobtrusive script used to overlay images on the current page. It's a snap to setup and works on all modern browsers.
 	(http://www.lokeshdhakar.com/projects/lightbox2/) -->
 	<script type="text/javascript" src="js/lightbox.js"></script>
@@ -656,6 +658,13 @@ css-classes, which concern the full html-site. This classes:
 	'xml xhtml xslt html    js/syntaxhighlighter/shbrushxml.js'
 	);</script> -->
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<!-- Cufón -->
+	<script type="text/javascript" src="cufon/cufon-yui.js"></script>
+	<script type="text/javascript" src="cufon/arial_400-arial_700-arial_italic_400-arial_italic_700.font.js"></script>
+	<script type="text/javascript">
+			Cufon.replace('h1'); // Works without a selector engine
+			Cufon.replace('#cufon'); // Requires a selector engine for IE 6-7
+		</script>
 	<!-- Google Analitycs -->
 	<script type="text/javascript">
 
@@ -672,6 +681,7 @@ css-classes, which concern the full html-site. This classes:
 	</script>
 </head>
 <body>
+<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
 		

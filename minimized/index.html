@@ -249,6 +249,12 @@
 	<script type="text/javascript" src="js/lightbox.js"></script>
 	<script type="text/javascript" src="js/syntaxhighlighter/shcore.js"></script>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<script type="text/javascript" src="cufon/cufon-yui.js"></script>
+	<script type="text/javascript" src="cufon/arial_400-arial_700-arial_italic_400-arial_italic_700.font.js"></script>
+	<script type="text/javascript">
+			Cufon.replace('h1'); // Works without a selector engine
+			Cufon.replace('#cufon'); // Requires a selector engine for IE 6-7
+		</script>
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -264,6 +270,7 @@
 	</script>	
 </head>
 <body>
+<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
 		
