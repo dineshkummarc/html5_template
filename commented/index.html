@@ -1,1372 +1,1071 @@
 <!--
-	Title: HTML5 template		
-	Creator: Mukli Krisztián
-	Subject: html5, website, template, base, development
-	Description: An initial html5-based site, optimized for most used functions.
-	Usage: use the minimized version, this file can't use for theoretical 
-	purposes, because it contains to much comments and other elements, it made 
-	for better understanding!
-	Publisher: Mukli Krisztián
-	Contributor: no contributors
-	Date: 2012.03.02.
-	Type: Text
-	Format: text/html
-	Identifier: html5_template
-	Source: http://www.w3schools.com
-			http://html5boilerplate.com
-			http://html5reset.org
-			http://kgyt.hu
-			http://meyerweb.com/eric/tools/css/reset/
-	Language: en
-	Relation: no relation
-	Coverage: World
-	Rights: public domain		
+Title: HTML5 template
+Creator: Mukli Krisztián
+Subject: html5, website, template, base, development
+Description: An initial html5-based site, optimized for most used functions.
+This files contains 80 character wide rows for theoretical reasons, and we
+shortened every links. If you don't trust our shortened links you can try that
+on site checkshorturl.com.
+Usage: use the minimized version, this file can't use for theoretical purposes,
+because it contains to much comments and other elements, it made for better 
+understanding!
+Publisher: Mukli Krisztián
+Contributor: no contributors
+Date: 2012.03.02.
+Type: Text
+Format: text/html
+Identifier: html5_template
+Source: http://ur1.ca/ty6q
+		http://ur1.ca/13miy
+		http://ur1.ca/8ve4a
+		http://ur1.ca/8ve4b
+		http://ur1.ca/30z6x
+Language: en
+Relation: no relation
+Coverage: World
+Rights: public domain
 -->
-<!-- Document Type Definiton -->
-<!-- 
-IF YOU DON'T DELETE EVERY COMMENT BEFORE DOCTYPE LINE, INTERNET EXPLORER WILL GO
-INTO THE QUIRKS MODE !! 
--->
+<!--Document Type Definiton-->
+<!--IF YOU DON'T DELETE EVERY COMMENT BEFORE DOCTYPE LINE, INTERNET EXPLORER 
+WILL GO INTO THE QUIRKS MODE !!-->
 <!DOCTYPE html>
 <!-- 
-	Conditional html-classes, this classes more effective than conditional 
-	css-rules, because every css-rules can be in one file. Declare 3 type of 
-	css-classes, which concern the full html-site. This classes:
-	no-js for Modernizr.js 
-		http://modernizr.github.com/Modernizr/annotatedsource.html
-	old for old browsers
-	ie6, ie7, iem7, ie8, ie9 for specific version of Internet Explorer 
-		http://themble.com/support/the-bones-header/
-		http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
--->	
-<!--
-	HTML Language declaration
-	http://www.w3.org/International/questions/qa-http-and-lang.en.php 
+Conditional html-classes, this classes more effective than conditional 
+css-rules, because every css-rules can be in one file. Declare 3 type of 
+css-classes, which concern the full html-site. This classes: 
+no-js for Modernizr.js 
+	http://ur1.ca/8ve4e
+old for old browsers
+ie6, ie7, iem7, ie8, ie9 for specific version of Internet Explorer 
+	http://ur1.ca/8ve4f
+	http://ur1.ca/8ve4i
 -->
-<!-- 
-	If you use the open graph protocol, you need: 
-	<html prefix="og: http://ogp.me/ns#"> 
+<!--HTML Language declaration
+	http://ur1.ca/8ve4l
 -->
-<!-- 
-	manifest.appcache: h5bp.com/d/Offline
-		http://manifest-validator.com/
-		http://www.html5rocks.com/en/tutorials/appcache/beginner/
-		http://appcachefacts.info/
-		http://www.w3.org/TR/offline-webapps/
-	further offline or cacheing techniques:
-		localStorage and sessionStorage(Web Storage) 
-			http://dev.w3.org/html5/webstorage/
-		Web SQL Database (deprecated) 
-			http://dev.w3.org/html5/webdatabase/
-		Indexed DB 
-			http://www.w3.org/TR/IndexedDB/
-		File API 
-			http://dev.w3.org/2009/dap/file-system/file-dir-sys.html
- -->
-<!--[if lt IE 7 ]> <html class="no-js old ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js old ie7" lang="en"> <![endif]-->
-<!--[if IEMobile 7 ]> class="no-js old iem7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js old ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]><!--> 
-<html class="no-js" lang="en" manifest="appcache/manifest.appcache"> 
+<!--If you use the open graph protocol, you need: 
+<html prefix="og: http://ogp.me/ns#"> -->
+<!--manifest.appcache: 
+	http://ur1.ca/8ve4o
+	http://ur1.ca/8ve4q
+	http://ur1.ca/8ve4t
+	http://ur1.ca/8ve4w
+	http://ur1.ca/8ve50
+further offline or cacheing techniques:
+localStorage and sessionStorage(Web Storage) 
+	http://ur1.ca/5aisr
+Web SQL Database (deprecated) 
+	http://ur1.ca/5ajs0
+Indexed DB 
+	http://ur1.ca/8ve53
+File API 
+	http://ur1.ca/8ve55
+-->
+<!--[if lt IE 7 ]><html class="no-js old ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js old ie7" lang="en"><![endif]-->
+<!--[if IEMobile 7 ]><html class="no-js old iem7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js old ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]><!-->
+<html class="no-js" lang="en" manifest="appcache/manifest.appcache">
 <!--<![endif]-->
 <!--HEAD-->
-<!--
-	Mortaugh HTML5 Reset use id and data-template-set, for php-based sites 
--->
+<!--Mortaugh HTML5 Reset use id and data-template-set, for php-based sites-->
 <!--<head id="www-sitename-com" data-template-set="html5-reset">-->
 <head>
-	<!-- Title of website -->
-	<title></title>
-	<!-- 
-	Charset: you use UTF-8 almost everything or in other cases you can use 
-	standard latin charset 
-	-->
-	<!-- 
-	IF YOU USE UTF-8 CHARSET, YOU SAVE YOUR FILES TO UTF-8 WITHOUT BOM AND IF 
-	YOU USE LATIN-1 OR 2, YOU SAVE TO ANSI !! 
-	-->
-	<!-- Latin-1 <meta charset="ISO-8859-1"> --> 
-	<!-- Latin-2 <meta charset="ISO-8859-2"> --> 
-	<meta charset="UTF-8">
-	
-	<!-- 
-	If you have resources that are outside of your HTML (a javascript 
-	request to a remote server or a CDN that hosts content that may not be 
-	present on every page of your site, for example) then you can queue up a 
-	domain name to be prefetched. Normally it isn't necessary, because major 
-	browsers prefetching automatically, this technique is usefully for foreign 
-	domains. http://html5boilerplate.com/docs/DNS-Prefetching/ 
-	-->
-	<!-- Disable implicit prefetching -->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- <meta http-equiv="x-dns-prefetch-control" content="off"> -->
-	<!-- Explicit prefetches -->
-	<!-- <link rel="dns-prefetch" href="//example.com"> -->
-	
-	<!-- 
-	Always force latest IE rendering engine & Chrome Frame
-	Use the .htaccess and remove these lines to avoid edge case issues. 
-	More info: h5bp.com/b/378 
-	-->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
-	
-	<!--
-	Suppress IE6 image toolbar 
-	-->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- <meta http-equiv="imagetoolbar" content="false"> -->
-	
-	<!-- HTTP-EQUIV TAGS -->
-	<!-- 
-	Specifies the character encoding for the document, but using http-equiv
-	is no longer the only way to specify the character set of an HTML document. 
-	You use meta charset instead of it, or both of them. Order: Latin-1, Latin-2
-	UTF-8
-	-->
-	<!-- 
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"> 
-	-->
-	<!-- 
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-2"> 
-	-->
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<!-- Specified the preferred style sheet to use. -->
-	<meta http-equiv="default-style" content="css/style.css">
-	<!-- 
-	Defines a time interval for the document to refresh itself.  The value 
-	"refresh" should be used carefully, as it takes the control of a page away 
-	from the user. Using "refresh" will cause a failure in W3C's Web Content 
-	Accessibility Guidelines. 
-		http://www.w3.org/WAI/intro/wcag.php 
-	-->
-	<!-- <meta http-equiv="refresh" content="300"> -->
-	
-	<!-- META TAGS -->
-	<!-- 
-	We use only proposed meta tags, which are validated by W3C validator. There 
-	are some new meta name tag, and some of them, which was valid in HTML4 or 
-	XHTML1.x, actually unusable with a valid HTML5 site. We recommend you don't 
-	use every meta tag, only that you think usefully. You can read and extend 
-	full registered HTML5 meta name tag list in WHATWG wiki 
-		http://wiki.whatwg.org/wiki/MetaExtensions 
-	-->
-	
-	<!-- META NAME TAGS -->
-	<!-- 
-	Specifies the name of the Web application that the page represents 
-	-->
-	<meta name="application-name" content="">
-	<!-- 
-	Author of site 
-	-->
-	<meta name="author" content="">
-	<!-- 
-	Description of content 
-	-->
-	<meta name="description" content="">
-	<!-- 
-	Designer's name 
-	-->
-	<meta name="designer" content="">
-	<!-- 
-	Generator or editor software 
-	-->
-	<meta name="generator" content="">
-	<!-- 
-	Keywords 
-	-->
-	<meta name="keywords" content="">
-	<!-- 
-	Publisher's name 
-	-->
-	<meta name="publisher" content="">
-	<!-- 
-	Content rating 
-	-->
-	<meta name="rating" content="Safe for kids | General | 14 Years | Mature | 
-	Restricted">
-	<!-- 
-	How often recrawl the page by search engines 
-	-->
-	<meta name="revisit-after" content="7 days | 1 month | 3 months | 1 year">
-	<!-- 
-	Rights 
-	-->
-	<meta name="rights-standard" content="pd | cc by-sa | cc by-nd | cc by-nc | 
-	cc by-nc-sa | cc by-nc-nd">
-	<!-- 
-	How search engine crawlers should treat the content 
-	-->
-	<meta name="robots" content="all | follow | index | noarchive | noindex | 
-	nofollow | none ">
-	
-	<!-- Company-related META NAME TAGS -->
-	<!-- 
-	As against general meta name tags, following meta tags related on companies 
-	-->
-	
-	<!-- ALEXA -->
-	<!-- 
-	Used to verify ownership of Alexa Search 
-	(http://www.alexa.com/faqs/?p=188) 
-	-->
-	<meta name="alexaverifyid" content="">
-	
-	<!-- BAIDUS -->
-	<!-- 
-	Synonym of robots for targeting Baidu only. 
-	http://www.baidu.com/search/robots_english.html) 
-	-->
-	<meta name="baiduspider" content="">
-	
-	<!-- CITESEERX -->
-	<!-- 
-	Synonym of robots for targeting CiteSeerX only. 
-	(http://csxstatic.ist.psu.edu/submit) 
-	-->
-	<!-- IT SEEMS TO BE INVALID, USE ROBOTS.TXT INSTEAD OF THIS METATAG -->
-	<!-- <meta name="citeseerxbot" content=""> -->
-	
-	<!-- EASYCMS -->
-	<!-- 
-	Object Title, where this is not the TITLE or H1 tag content, but the 
-	resource title 
-	(http://www.eibs.co.uk/reference/) 
-	-->
-	<meta name="es.title" content="">
-	
-	<!-- ESSAYDIRECTORY -->
-	<!--
-	Defines a custom description of websites listed in EssayDirectory.com 
-	(http://essaydirectory.com/privacy-terms/#EssayDirectory_MetaExtension) 
-	-->
-	<meta name="EssayDirectory" content="">
-	
-	<!-- OPENSEARCH -->
-	<!-- 
-	Used to identify the index of the first search result in the current 
-	set of search results. 
-	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) 
-	-->
-	<meta name="startIndex" content="">
-	<!-- 
-	Used to identify the number of search results returned per page. 
-	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML) 
-	-->
-	<meta name="itemsPerPage" content="">
-	<!-- 
-	Used to identify the number of search results available for the current
-	search. 
-	(http://www.opensearch.org/Specifications/OpenSearch/1.1#Response_metadata_in_HTML.2FXHTML)
-	-->
-	<meta name="totalResults" content="">
-	
-	<!-- NORTON -->
-	<!-- 
-	Used to verify ownership of Website for Norton SafeWeb. 
-	(http://safeweb.norton.com/help/site_owners#verification_tips) 
-	-->
-	<meta name="norton-safeweb-site-verification" content="">
-	
-	<!-- RESTRICTED TO ADULTS LABEL -->
-	<!-- 
-	Rating tag is not same with earlier rating tag (which can use "all | 
-	children | youngs | seniors" content values. The Restricted to Adults label 
-	(RTA) provides a way for adult oriented websites to indicate that their 
-	content is off limits to children. RTA was introduced in 2006 and is 
-	currently used by a large number of adult web content providers. RTA is 
-	recognized by all major parental control filters. 
-	(http://www.rtalabel.org/index.php?content=howto) 
-	-->
-	<meta name="rating" content="RTA-5042-1996-1400-1577-RTA">
-	
-	<!-- SKYPE -->
-	<!-- 
-	Prevents the Skype browser extension from automatically seeking through
-	the page and replacing telephone numbers (or any number the program's 
-	algorithm thinks is a telephone number) with its own custom presentation 
-	that allows direct invocation of the Skype program to call the telephone 
-	number. 
-	(http://skype.otherlinks.co.uk/page.asp?id=toolbar_number_formatting) 
-	-->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!--<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">-->
-	
-	<!-- YAHOO -->
-	<!-- 
-	Used to verify ownership for Yahoo! Site Explorer 
-	(http://help.yahoo.com/l/us/yahoo/search/siteexplorer/siteexplorer-06.html) 
-	-->
-	<meta name="y_key" content="">
-	<!-- 
-	Synonym of robots for targeting Yahoo! only. 
-	(http://help.yahoo.com/l/au/yahoo7/search/indexing/indexing-11.html) 
-	-->
-	<meta name="slurp" content="">
-	
-	<!-- TEOMA, ASK.COM -->
-	<!-- 
-	Synonym of robots for targeting Teoma and Ask.com only. 
-	(http://about.ask.com/en/docs/about/webmasters.shtml) 
-	-->
-	<meta name="teoma" content="">
-	
-	<!-- YANDEX -->
-	<!-- 
-	Used to verify ownership for Yandex Webmaster. 
-	(http://help.yandex.ru/webmaster/?id=995300#995356) 
-	-->
-	<meta name="yandex-verification" content="">
-	
-	<!-- HEALTH CANADA WEB METADATA APPLICATION PROFILE MARCH 2009 -->
-	<!-- 
-	The date a resource is scheduled for review by content creator in order to 
-	determine if it should be archived, updated or retained as is. 
-	(http://www.hc-sc.gc.ca/home-accueil/alt_formats/pacrb-dgapcr/pdf/Metadata_Application_Profile_2009.pdf) 
-	-->
-	<meta name="review_date" content="">
-	<!-- 
-	The date used to indicate that the Metadata has been prepared and/or 
-	reviewed and approved by the Metadata Unit. Its purpose is administrative. 
-	(Used by "Autonomy".) 
-	(http://www.hc-sc.gc.ca/home-accueil/alt_formats/pacrb-dgapcr/pdf/Metadata_Application_Profile_2009.pdf) 
-	-->
-	<meta name="meta_date" content="">
-	
-	<!-- MOBILE OPTIMIZATION -->
-	<!-- 
-	Denotes handheld-friendly content 
-	(http://learnthemobileweb.com/tag/handheldfriendly/)
-	The value of the META tag is “true” for mobile markup and “false” for 
-	desktop-optimized HTML. 
-	-->
-	<meta name="HandheldFriendly" content="true | false">
-	<!-- 
-	Denotes content optimized for mobile browsers 
-	(http://learnthemobileweb.com/tag/mobileoptimized/)
-		Smartphone - content="176"
-		Pocker PC - content="240"
-		Pocket PC with high DPI - content="480"
-	The suggested default setting is that of a Pocket PC or 240.
-	-->
-	<meta name="MobileOptimized" content="176 | 240 | 480">
-	
-	<!-- MARKOSWEB -->
-	<!-- 
-	Used to verify ownership of Markosweb.com 
-	(http://www.markosweb.com/help/ownership/) -->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- <meta name="markosweb.com/validation" content=""> -->	
+<!--Title of website-->
+<title></title>
+<!--Charset: you use UTF-8 almost everything or in other cases you can use 
+standard latin charset-->
+<!--IF YOU USE UTF-8 CHARSET, YOU SAVE YOUR FILES TO UTF-8 WITHOUT BOM AND IF 
+YOU USE LATIN-1 OR 2, YOU SAVE TO ANSI !!-->
+<!--Latin-1 <meta charset="ISO-8859-1">--> 
+<!--Latin-2 <meta charset="ISO-8859-2">--> 
+<meta charset="UTF-8">
 
-	<!-- APPLE -->
-	<!-- 
-	Sets whether a web application runs in full-screen mode. If content is set 
-	to yes, the web application runs in full-screen mode; otherwise, it does 
-	not. The default behavior is to use Safari to display web content. 
-	https://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html) 
-	-->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<!-- 
-	Sets the style of the status bar for a web application. This meta tag has no
-	effect unless you first specify full-screen mode as described in 
-	“apple-mobile-web-app-capable.”	If content is set to default, the status bar
-	appears normal. If set to black, the status bar has a black background. If 
-	set to black-translucent, the status bar is black and translucent. If set to
-	default or black, the web content is displayed below the status bar. If set 
-	to black-translucent, the web content is displayed on the entire screen, 
-	partially obscured by the status bar. The default value is default. 
-	-->
-	<meta name="apple-mobile-web-app-status-bar-style" content="default | black 
-	| black-translucent">
-	<!-- 
-	Enables or disables automatic detection of possible phone numbers in a 
-	webpage in Safari on iOS. By default, Safari on iOS detects any string 
-	formatted like a phone number and makes it a link that calls the number. 
-	Specifying telephone=no disables this feature. 
-	-->
-	<meta name="format-detection" content="telephone=no">
-	<!--  
-	Mobile Viewport Fix
-	https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
-	davidbcalhoun.com/2010/viewport-metatag 
-		device-width : Occupy full width of the screen in its current 
-		orientation
-		initial-scale = 1.0 retains dimensions instead of zooming out if page 
-		height > device height
-		maximum-scale = 1.0 retains dimensions instead of zooming in if page 
-		width < device width 
-	-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!--If you have resources that are outside of your HTML (a javascript request to
+a remote server or a CDN that hosts content that may not be present on every 
+page of your site, for example) then you can queue up a domain name to be 
+prefetched. Normally it isn't necessary, because major browsers prefetching
+automatically, this technique is usefully for foreign domains. 
+	http://ur1.ca/8ve57
+-->
+<!--Disable implicit prefetching-->
+<!--IT SEEMS TO BE INVALID-->
+<!--<meta http-equiv="x-dns-prefetch-control" content="off">-->
+<!--Explicit prefetches-->
+<!--<link rel="dns-prefetch" href="//example.com">-->
 
-	<!-- GOOGLE -->
-	<!-- 
-	Used to verify ownership for Webmaster Tools. 
-	(http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=79812)
-	-->
-	<meta name="google-site-verification" content="">
-	<!-- 
-	Synonym of robots for targeting Googlebot only. 
-	(http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=93710) 
-	-->
-	<meta name="googlebot" content="">
-	<!-- 
-	Legacy verification for Google Sitemaps. 
-	(http://sitemaps.blogspot.com/2006/05/more-about-meta-tag-verification.html 
-	-->
-	<meta name="verify-v1" content="">
-	
-	<!-- MICROSOFT -->
-	<!-- 
-	The "application-name" metadata defines the name of the Pinned Site 
-	application instance. This is the name that appears in a tooltip when 
-	hovering over the Pinned Site button on the Windows 7 taskbar. The 
-	application name is also appended to the window title of the Pinned Site 
-	application instance. 
-	-->
-	<meta name="application-name" content="">
-	<!-- 
-	Jump List items act as entry points into the website even when the browser 
-	is not running. A Jump List can contain commonly used destinations and 
-	tasks. Some items apply to the whole site, and some apply only to specific 
-	users. 
-	(http://msdn.microsoft.com/en-us/library/gg491725(v=vs.85).aspx) 
-	-->
-	<meta name="msapplication-task" content="">
-	<!-- 
-	The "msapplication-starturl" metadata contains the root URL of the 
-	application. The start URL can be fully qualified, or relative to the 
-	current document. Only HTTP and HTTPS protocols are allowed. If this element
-	is missing, the address of the current page is used instead. 
-	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) 
-	-->
-	<meta name="msapplication-starturl" content="">
-	<!-- 
-	The "msapplication-tooltip" metadata provides additional tooltip text that 
-	appears when you hover over the Pinned Site shortcut in the Windows Start 
-	menu or on the desktop. 
-	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) 
-	-->
-	<meta name="msapplication-tooltip" content="">
-	<!-- 
-	The "msapplication-navbutton-color" metadata define the custom color of the
-	Back and Forward buttons in the Pinned Site browser window. Any named color,
-	or hex color value is valid. 
-	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) 
-	-->
-	<meta name="msapplication-navbutton-color" content="">
-	<!-- 
-	The "msapplication-window" metadata sets the initial size of the Pinned Site
-	window when it is launched for the first time. However, if the user adjusts 
-	the size of the window, the Pinned Site retains the new dimensions when it 
-	is launched again. The following properties can be used in the value of the 
-	content attribute:
-		width - The window width in pixels. The minimum value is 800.
-		height - The window height in pixels. The minimum value is 600.
-	(http://msdn.microsoft.com/en-us/library/gg491732(v=VS.85).aspx) 
-	-->
-	<meta name="msapplication-window" content="">
-	<!-- 
-	Place this element between tasks to place a visible line in the Jump List 
-	menu. The separators must be made unique by declaring 
-	content="[unique value]" if you have more than one. 
-	-->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- <meta name="msapplication-task-separator" content=""> -->
-	<!-- 
-	One of the verification elements used by Bing. 
-	(http://onlinehelp.microsoft.com/en-us/bing/hh204490.aspx) 
-	-->
-	<meta name="msvalidate.01" content="">
-	
-	<!-- WEB-TRENDS -->
-	<!-- http://product.webtrends.com/WRC/OnDemand/ResourceCenter/rc/Library/PDF/IGOD/WebTrendsAnalyticsOnDemandImplementationGuide.pdf -->
-	<!-- 
-	Name of the Content Group
-	Used to configure the appropriate Webtrends advanced feature. These are just
-	some of the more popular ones. These appear in your META tags. – showing you
-	the web page, the source (meta tag), the log files entry and the subsequent 
-	WT report. 
-	-->
-	<meta name="wt.cg_n" content="">
-	<!-- 
-	Name of Content Sub-Group
-	Used to configure the appropriate Webtrends advanced feature. These are just
-	some of the more popular ones. These appear in your META tags. – showing you
-	the web page, the source (meta tag), the log files entry and the subsequent
-	WT report. 
-	-->
-	<meta name="wt.cg_s" content="">
-	<!-- 
-	Advertising Click parameter
-	When a visitor to your site clicks on an ad, that action is referred to as 
-	an Ad Click. The following META tag tracks advertising clicks:
-	<META NAME="WT.ac" CONTENT="name">
-	Defines the name of the advertisement clicked to reach a particular web 
-	page. The Ad Click must contain an external redirect back to the client. 
-	The redirect needs to include the necessary code to generate a hit to the 
-	SDC server. You can designate multiple Advertising Clicks using semicolons. 
-	Examples:
-	<a href="file111.html?WT.ac=CONTENT111">
-	<a href="file222.html?WT.ac=CONTENT222">
-	The name of the advertisement clicked to reach a particular web page. To 
-	capture this information with DCS, the Advertising Click must contain an 
-	external redirect back to the client. The redirect needs to	include the 
-	necessary code to generate a hit to the DCS. The maximum length for each 
-	name is 64 bytes. 
-	-->
-	<meta name="wt.ac" content="">
-	<!-- 
-	Advertising View parameter
-	Visitors often view advertisements that they do not necessarily click on. 
-	You can use On-Site Advertising to determine the number of visitors to your 
-	web site who view particular ads. With this feature you can produce 
-	advertising reports for each of your clients. If you are selling advertising
-	space on your web site, for example, you can collect traffic statistics to 
-	help determine pricing schedules. An Ad View occurs when a visitor views a 
-	page containing an ad. An ad is a link or graphic that contains an Ad Click 
-	parameter in the query portion of it's URL. 
-	-->
-	<meta name="wt.ad" content="">
-	<!-- 
-	Identifies the ID of the marketing campaign
-	To attract new students, a university launches a marketing campaign by 
-	sending recruitment email to all graduating high school seniors in a 
-	metropolitan area. The email links to a special landing page in the 
-	university’s web site, containing the following META tag to track marketing 
-	campaigns. 
-	Example:
-	<META NAME="WT.mc_id" CONTENT="1X2GG34">
-	You may use this parameter on the URL. 
-	Example:
-	<a href="link?WT.mc_id=1X2GG34">
-	The Campaign ID 1X2GG34 represents recruits to be contacted by email 
-	-->
-	<meta name="wt.mc_id" content="">
-	<!-- 
-	Tracking Servers parameter
-	If your site is hosted on multiple servers, a server cluster, or a server 
-	farm, and you want to evaluate the performance of your load balancer, 
-	Webtrends can track page views for each server. To do so, populate the 
-	following META tag on all pages on each server: 
-	Example:
-	<meta name="WT.sv" content="My Server">
-	Defines the name of the machine that serves the web page. If you have two 
-	servers (Server1 and Server2), you would make two copies of the META tag and
-	designate CONTENT=“Server1” for deployment to pages on the first server and 
-	CONTENT=“Server2” for deployment to the same pages on the second server. For
-	a server farm, you can extract the value of the built-in server name and 
-	dynamically assign it to the META tag using server-side scripting. 
-	Example:
-	<meta name="WT.sv" content="Server1">
-	<meta name="WT.sv" content="Server2">
-	An Ad View occurs when a visitor views a page containing an ad. An ad is a 
-	link or graphic that contains an Ad Click parameter in the query portion of 
-	it's URL 
-	(https://tagbuilder.webtrends.com/Help/Miscellaneous/AdSearch.aspx?keepThis=true&TB_iframe=true&height=450&width=650) 
-	-->
-	<meta name="wt.sv" content="">
-	<!-- 
-	Tracking Page Titles
-	You may want to modify a page title before sending it to Webtrends in the 
-	following cases:
-	You are dealing with dynamic content pages identified by URL parameters, and
-	the page title represents the title of the base URL page rather than the 
-	dynamic content page.
-	Unless you modify the page titles, all pages have the same title in the 
-	reports. All pages have been assigned the same title, for reasons of style 
-	or company policy. Even though URLs are displayed in addition to page title,
-	the entire URL cannot be depended upon to distinguish one page from another.
-	Use server-side scripts to change the title to something that reflects the 
-	content of the pages so that you can identify them in reports. Next, pass 
-	the customized page titles to Webtrends, using the following META tag:
-	<META NAME="WT.ti" CONTENT="title">
-	Defines the name of the title for this page. 
-	-->
-	<meta name="wt.ti" content="">
-	
-	<!-- GLOBRIX -->
-	<!-- (http://content.globrix.com/web-tools/8-technical-guide/74-what-are-globrix-meta-tags-and-how-can-i-use-them) -->
-	<!-- 
-	Globrix property information: Property to Buy or Rent 
-	-->
-	<meta name="globrix.instruction" content="">
-	<!-- 
-	Globrix property information: Price for the property 
-	-->
-	<meta name="globrix.price" content="">
-	<!-- 
-	Globrix property information: Postcode of the property 
-	-->
-	<meta name="globrix.postcode" content="">
-	<!-- 
-	Globrix property information: Number of bedrooms the property has 
-	-->
-	<meta name="globrix.bedrooms" content="">
-	<!-- 
-	Globrix property information: Number of bathrooms the property has 
-	-->
-	<meta name="globrix.bathrooms" content="">
-	<!-- 
-	Globrix property information: Type of property e.g. 'semi-detatched house' 
-	-->
-	<meta name="globrix.type" content="">
-	<!-- 
-	Globrix property information: Condition of the property e.g. 'renovated' 
-	-->
-	<meta name="globrix.condition" content="">
-	<!-- 
-	Globrix property information: Features of the property e.g. 'double glazing'
-	-->
-	<meta name="globrix.features" content="">
-	<!-- 
-	Globrix property information: External features of the property e.g. 
-	'garden' 
-	-->
-	<meta name="globrix.outsidespace" content="">
-	<!-- 
-	Globrix property information: Parking available for property e.g. 'parking 
-	for 2 cars' 
-	-->
-	<meta name="globrix.parking" content="">
-	<!-- 
-	Globrix property information: Period of the property e.g. 'victorian 
-	terrace'
-	-->
-	<meta name="globrix.period" content="">
-	<!-- 
-	Globrix property information: If the property price is only available on 
-	application 
-	-->
-	<meta name="globrix.poa" content="">
-	<!-- 
-	Globrix property information: The tenure of the property e.g. 'leasehold' 
-	-->
-	<meta name="globrix.tenure" content="">
-	<!-- 
-	Globrix property information: Indicates if the property is under offer 
-	-->
-	<meta name="globrix.underoffer" content="">
-	<!-- 
-	Globrix property information: The region of the attached price e.g. 'guide 
-	price of' 
-	-->
-	<meta name="globrix.priceproximity" content="">
-	<!-- 
-	Globrix property information: The latitude of the property 
-	-->
-	<meta name="globrix.latitude" content="">
-	<!-- 
-	Globrix property information: The longitude of the property 
-	-->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- <meta name="globrix.longitude" content=""> -->
-	
-	<!-- RUBY -->
-	<!-- 
-	(http://apidock.com/rails/ActionView/Helpers/CsrfHelper/csrf_meta_tag)
-	(http://www.glrzad.com/) 
-	-->
-	<!-- 
-	Cross-site request forgery protection parameter for Ruby on Rails 
-	-->
-	<meta name="csrf-token" content="">
-	<!-- 
-	Cross-site request forgery protection token for Ruby on Rails  
-	-->
-	<meta name="csrf-param" content="">
-	
-	<!-- THE OPEN GRAPH PROTOCOL -->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- 
-	(http://ogp.me/) 
-	It needs: <html prefix="og: http://ogp.me/ns#"> 
-	-->
-	<!--
-	A URL to an audio file to accompany this object.
-	-->
-	<!-- <meta property="og:audio" content=""> -->
-	<!--
-	A one to two sentence description of your object.
-	-->
-	<!-- <meta property="og:description" content=""> -->
-	<!--
-	The word that appears before this object's title in a sentence. An enum of 
-	(a, an, the, "", auto). If auto is chosen, the consumer of your data should 
-	chose between 'a' or 'an'. Default is '' (blank).
-	-->
-	<!-- <meta property="og:determiner" content=""> -->
-	<!--
-	An image URL which should represent your object within the graph.
-	-->
-	<!-- <meta property="og:image" content=""> -->
-	<!--
-	The locale these tags are marked up in. Of the format language_TERRITORY. 
-	Default is en_US.
-	-->
-	<!-- <meta property="og:locale" content=""> -->
-	<!--
-	An array of other locales this page is available in.
-	-->
-	<!-- <meta property="og:locale:alternate" content=""> -->
-	<!--
-	If your object is part of a larger web site, the name which should be 
-	displayed for the overall site. e.g., "IMDb".
-	-->
-	<!-- <meta property="og:site_name" content=""> -->
-	<!--
-	The title of your object as it should appear within the graph, e.g., 
-	"The Rock".
-	-->
-	<!-- <meta property="og:title" content=""> -->
-	<!--
-	The type of your object, e.g., 'video.movie'. Depending on the type you 
-	specify, other properties may also be required.
-	-->
-	<!-- <meta property="og:type" content=""> -->
-	<!--
-	The canonical URL of your object that will be used as its permanent ID in 
-	the graph
-	-->
-	<!-- <meta property="og:url" content=""> -->
-	<!--
-	A URL to a video file that complements this object.
-	-->
-	<!-- <meta property="og:video" content=""> -->
-	
-	<!-- DUBLIN CORE TAGS -->
-	<!-- New Dublin Core nomenclature, you use "dcterms.tag" instead of old 
-	"dc.tag" form. We recommend you don't use every DC tag, only that you 
-	thought usefully. 
-	(http://dublincore.org/documents/dcmi-terms/) 
-	-->
-	<!--
-	Date of publication for Google News. The format of the content is YYYY-MM-DD
-	or YYYY-MM-DDThh:mm:ssTZD.
-	-->
-	<meta name="dc.date.issued" content="">
-	<!--
-	A language of the resource. Recommended best practice is to use a controlled
-	vocabulary such as RFC 4646
-	-->
-	<meta name="dc.language" content="">
-	<!--
-	A summary of the resource.
-	-->
-	<meta name="dcterms.abstract" content="">
-	<!--
-	Information about who can access the resource or an indication of its 
-	security status.
-	-->
-	<meta name="dcterms.accessRights" content="">
-	<!--
-	The method by which items are added to a collection
-	-->
-	<meta name="dcterms.accrualMethod" content="">
-	<!--
-	The frequency with which items are added to a collection.
-	-->
-	<meta name="dcterms.accrualPeriodicity" content="">
-	<!--
-	The policy governing the addition of items to a collection.
-	-->
-	<meta name="dcterms.accrualPolicy" content="">
-	<!--
-	An alternative name for the resource.
-	-->
-	<meta name="dcterms.alternative" content="">
-	<!--
-	A class of entity for whom the resource is intended or useful.
-	-->
-	<meta name="dcterms.audience" content="">
-	<!--
-	Date (often a range) that the resource became or will become available.
-	-->
-	<meta name="dcterms.available" content="">
-	<!--
-	A bibliographic reference for the resource.
-	-->
-	<meta name="dcterms.bibliographicCitation" content="">
-	<!--
-	An established standard to which the described resource conforms.
-	-->
-	<meta name="dcterms.conformsTo" content="">
-	<!--
-	An entity responsible for making contributions to the content of the 
-	resource.
-	-->
-	<meta name="dcterms.contributor" content="">
-	<!--
-	The spatial or temporal topic of the resource, the spatial applicability of 
-	the resource, or the jurisdiction under which the resource is relevant.
-	-->
-	<meta name="dcterms.coverage" content="">
-	<!--
-	Date of creation of the resource.
-	-->
-	<meta name="dcterms.created" content="">
-	<!--
-	An entity primarily responsible for making the resource. Examples of a 
-	Creator include a person, an organization, or a service.
-	-->
-	<meta name="dcterms.creator" content="">
-	<!--
-	A point or period of time associated with an event in the lifecycle of the 
-	resource.
-	-->
-	<meta name="dcterms.date" content="">
-	<!--
-	Date of acceptance of the resource.
-	-->
-	<meta name="dcterms.dateAccepted" content="">
-	<!--
-	Date of copyright.
-	-->
-	<meta name="dcterms.dateCopyrighted" content="">
-	<!--
-	Date of submission of the resource.
-	-->
-	<meta name="dcterms.dateSubmitted" content="">
-	<!--
-	An account of the resource. Description may include but is not limited to: 
-	an abstract, a table of contents, a graphical representation, or a free-text
-	account of the resource.
-	-->
-	<meta name="dcterms.description" content="">
-	<!--
-	A class of entity, defined in terms of progression through an educational or
-	training context, for which the described resource is intended.
-	-->
-	<meta name="dcterms.educationLevel" content="">
-	<!--
-	The size or duration of the resource.
-	-->
-	<meta name="dcterms.extent" content="">
-	<!--
-	The file format, physical medium, or dimensions of the resource.
-	-->
-	<meta name="dcterms.format" content="">
-	<!--
-	A related resource that is substantially the same as the pre-existing 
-	described resource, but in another format.
-	-->
-	<meta name="dcterms.hasFormat" content="">
-	<!--
-	A related resource that is included either physically or logically in the 
-	described resource.
-	-->
-	<meta name="dcterms.hasPart" content="">
-	<!--
-	A related resource that is a version, edition, or adaptation of the 
-	described resource.
-	-->
-	<meta name="dcterms.hasVersion" content="">
-	<!--
-	An unambiguous reference to the resource within a given context.
-	-->
-	<meta name="dcterms.identifier" content="">
-	<!--
-	A process used to engender knowledge, attitudes and skills, that the 
-	described resource is designed to support.
-	-->
-	<meta name="dcterms.instructionalMethod" content="">
-	<!--
-	A related resource that is substantially the same as the described 
-	resource, but in another format.
-	-->
-	<meta name="dcterms.isFormatOf" content="">
-	<!--
-	A related resource in which the described resource is physically or 
-	logically included.
-	-->
-	<meta name="dcterms.isPartOf" content="">
-	<!--
-	A related resource that references, cites, or otherwise points to the 
-	described resource.
-	-->
-	<meta name="dcterms.isReferencedBy" content="">
-	<!--
-	A related resource that supplants, displaces, or supersedes the described 
-	resource.
-	-->
-	<meta name="dcterms.isReplacedBy" content="">
-	<!--
-	A related resource that requires the described resource to support its 
-	function, delivery, or coherence.
-	-->
-	<meta name="dcterms.isRequiredBy" content="">
-	<!--
-	Date of formal issuance (e.g., publication) of the resource. (DC doesn't 
-	spec a date format but the established practice is YYYY-MM-DD.)
-	-->
-	<meta name="dcterms.issued" content="">
-	<!--
-	A related resource of which the described resource is a version, edition, or
-	adaptation.
-	-->
-	<meta name="dcterms.isVersionOf" content="">
-	<!--
-	A language of the resource. Recommended best practice is to use a controlled
-	vocabulary such as RFC 4646
-	-->
-	<meta name="dcterms.language" content="">
-	<!--
-	A legal document giving official permission to do something with the 
-	resource.
-	-->
-	<meta name="dcterms.license" content="">
-	<!--
-	An entity that mediates access to the resource and for whom the resource is 
-	intended or useful.
-	-->
-	<meta name="dcterms.mediator" content="">
-	<!--
-	The material or physical carrier of the resource.
-	-->
-	<meta name="dcterms.medium" content="">
-	<!--
-	Date on which the resource was changed. (DC doesn't spec a date format but 
-	the established practice is YYYY-MM-DD.)
-	-->
-	<meta name="dcterms.modified" content="">
-	<!--
-	A statement for any changes in ownership and custody of the resource since 
-	its creation that are significant for its authenticity, integrity, and 
-	interpretation.
-	-->
-	<meta name="dcterms.provenance" content="">
-	<!--
-	An entity responsible for making the resource available.
-	-->
-	<meta name="dcterms.publisher" content="">
-	<!--
-	A related resource that is referenced, cited, or otherwise pointed to by the
-	described resource.
-	-->
-	<meta name="dcterms.references" content="">
-	<!--
-	A related resource.
-	-->
-	<meta name="dcterms.relation" content="">
-	<!--
-	A related resource that is supplanted, displaced, or superseded by the 
-	described resource.
-	-->
-	<meta name="dcterms.replaces" content="">
-	<!--
-	A related resource that is required by the described resource to support its
-	function, delivery, or coherence.
-	-->
-	<meta name="dcterms.requires" content="">
-	<!--
-	Information about rights held in and over the resource. 
-	copyright | gnu gplv3 | gnu lgplv3 | gnu agplv3 | gnu fdlv1.3 | cc by-sa | 
-	cc by-nd | cc by-nc | cc by-nc-sa | cc by-nc-nd | pd
-	-->
-	<meta name="dcterms.rights" content="">
-	<!--
-	A person or organization owning or managing rights over the resource.
-	-->
-	<meta name="dcterms.rightsHolder" content="">
-	<!--
-	A related resource from which the described resource is derived.
-	-->
-	<meta name="dcterms.source" content="">
-	<!--
-	Spatial characteristics of the resource.
-	-->
-	<meta name="dcterms.spatial" content="">
-	<!--
-	The topic of the resource.
-	-->
-	<meta name="dcterms.subject" content="">
-	<!--
-	A list of subunits of the resource.
-	-->
-	<meta name="dcterms.tableOfContents" content="">
-	<!--
-	Temporal characteristics of the resource.
-	-->
-	<meta name="dcterms.temporal" content="">
-	<!--
-	A name given to the resource.
-	-->
-	<meta name="dcterms.title" content="">
-	<!--
-	The nature or genre of the resource.
-	-->
-	<meta name="dcterms.type" content="">
-	<!--
-	Date (often a range) of validity of a resource.
-	-->
-	<meta name="dcterms.valid" content="">
-	
-	<!-- GEO-TAGS -->
-	<!-- 
-	(http://www.geo-tag.de)
-	(http://www.syndic8.com/help_metadata.php) 
-	-->
-	<!--
-	Case-insensitive ISO 3166-1 alpha-2 code of a country to which the page is 
-	related to.
-	-->
-	<meta name="geo.country" content="">
-	<!-- 
-	Defines name of geographic place to which page is related to.
-	(http://tools.ietf.org/html/draft-daviel-html-geo-tag-08) 
-	-->
-	<meta name="geo.placename" content="">
-	<!-- 
-	Defines geographic position to which page is related to
-	(http://tools.ietf.org/html/draft-daviel-html-geo-tag-08) 
-	-->
-	<meta name="geo.position" content="">
-	<!-- 
-	Defines name of geographic region to which page is related to. Content is 
-	specified by ISO-3166.
-	(http://en.wikipedia.org/wiki/ISO_3166) 
-	-->
-	<meta name="geo.region" content="">
-	<!-- 
-	Defines geographic position to which page is related to. The acronym stands 
-	for ICBM Intercontinental Ballistic Missile - an old, humorous allusion to 
-	the possible use of such coordinates.
-	(http://geourl.org/add.html) 
-	-->
-	<meta name="icbm" content="">
-	
-	<!-- LINKS -->
-	<!-- 
-	Firstly we adding some explanation for links, after addng some usable 
-	example. 
-	-->
-	<!-- 
-	Links to an alternate version of the document (i.e. print page, translated 
-	or mirror) 
-	-->
-	<link rel="alternate" href="example.com">
-	<!-- 
-	Links to the author of the document 
-	-->
-	<link rel="author" href="example.com">
-	<!-- 
-	Links to a help document 
-	-->
-	<link rel="help" href="example.com">
-	<!-- 
-	Imports an icon to represent the document 
-	-->
-	<link rel="icon" href="example.com">
-	<!-- 
-	Links to copyright information for the document 
-	-->
-	<link rel="license" href="example.com">
-	<!-- 
-	Indicates that the document is a part of a series, and that the next 
-	document in the series is the referenced document 
-	-->
-	<link rel="next" href="example.com">
-	<!-- 
-	Specifies that the target resource should be cached 
-	-->
-	<link rel="prefetch" href="example.com">
-	<!-- 
-	Indicates that the document is a part of a series, and that the previous 
-	document in the series is the referenced document 
-	-->
-	<link rel="prev" href="example.com">
-	<!-- 
-	Links to a search tool for the document 
-	-->
-	<link rel="search" href="example.com">
-	<!-- 
-	URL to a style sheet to import 
-	-->
-	<link rel="stylesheet" href="example.com">
-	
-	<!-- Direct search spiders to your sitemap -->
-	<!-- IT SEEMS TO BE INVALID -->
-	<!-- <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"> -->
-	
-	<!-- Browser Search plugin -->
-	<!-- http://www.opensearch.org -->
-	<link rel="search" title="title" type="application/opensearchdescription+xml" href="/search.xml">
-	
-	<!-- 
-	Canonical URL
-	Signal to search engines and others "Use this URL for this page!" 
-	-->
-	<link rel="canonical" href="">
-	
-	<!-- 
-	Official shortlink
-	Signal to the world "This is the shortened URL to use this page!" Poorly 
-	
-	supported at this time.
-	http://microformats.org/wiki/rel-shortlink -->
-	<link rel="shortlink" href="h5temp.com">
-	
-	<!-- RSS -->
-	<!-- http://www.rssboard.org/rss-specification -->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
-	
-	<!-- ATOM -->
-	<!-- http://www.atomenabled.org/developers/syndication/ -->
-	<link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
-	
-	<!-- Pingback -->
-	<!-- http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5 -->
-	<link rel="pingback" href="pingbackservice.com">
-	
-	<!-- humans.txt -->
-	<!-- http://humanstxt.org -->
-	<link rel="author" href="/humans.txt">
-	
-	<!-- ICONS -->
-	<!-- 
-	Place favicon.ico and apple-touch-icon.png in the root directory: 
-	mathiasbynens.be/notes/touch-icons -->
-	<!-- 
-	For old IE type="image/vnd.microsoft.icon" isn't recommended, use instead 
-	type="image/x-icon" or nothing. 
-	-->
-	<!--[if !(IE)]><!--> <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon"> <!--<![endif]-->
-	<!--[if IE]><link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon"><![endif]-->
-	<!-- This is the traditional favicon.
-		 - size: 16x16 or 32x32
-		 - transparency is OK
-		 - see wikipedia for info on browser support: http://mky.be/favicon/ 
-	-->		 
-	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon.png">
-	<!-- The is the icon for iOS's Web Clip.
-		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's
-		 retina display (IMHO, just go ahead and use the biggest one)
-		 - To prevent iOS from applying its styles to the icon name it thusly: 
-		 apple-touch-icon-precomposed.png
-		 - Transparency is not recommended (iOS will put a black BG behind the 
-		 icon) 		 
-	-->
-		 
-	<!-- STYLE -->
-	<base href="www.website.com" />
-	<!-- 
-	Site's own design 
-	-->
-	<link rel="stylesheet" href="css/style.css"  type="text/css" />
-	<!-- 
-	Lightbox-stylesheet, see below the scripts
-	-->
-	<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
-	<!-- 
-	Syntaxhighlighter-stylesheets, see below the scripts 
-	Include *at least* the core style and default theme, and/or you uncomment 
-	what you want use 
-	-->
-	<link rel="stylesheet" href="css/shcore.css" type="text/css" />
-	<!-- <link rel="stylesheet" href="css/shcoredefault.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shcoredjango.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shcoreeclipse.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shcoreemacs.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shcorefadetogrey.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shcoremdultra.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shcoremidnight.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shcorerdark.css" type="text/css" /> -->
-	<link rel="stylesheet" href="css/shthemedefault.css" type="text/css" /> 
-	<!-- <link rel="stylesheet" href="css/shthemedjango.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shthemeeclipse.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shthemeemacs.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shthemefadetogrey.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shthememdultra.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shthemedefault.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shthememidnight.css" type="text/css" /> -->
-	<!-- <link rel="stylesheet" href="css/shthemerdark.css" type="text/css" /> -->
-	
-	<!-- SCRIPTS -->
-	<!-- 
-	You can add your javascript in to your site before body (classic way) or 
-	after body for faster loading. We recommend the classic way, but it is your 
-	choice. We add some js for this template, and you can add (or remove) your 
-	own scripts too. 
-	-->
-	<!-- 
-	Modernizr is an open-source JavaScript library that helps you build the next
-	generation of HTML5 and CSS3-powered websites. (http://www.modernizr.com/)
-	-->
-	<script type='text/javascript' src='js/modernizr-2.5.3.js'></script>
-	<!-- 
-	jQuery is a fast and concise JavaScript Library that simplifies HTML 
-	document traversing, event handling, animating, and Ajax interactions for 
-	rapid web development. jQuery is designed to change the way that you write 
-	JavaScript. (http://jquery.com/) 
-	-->
-	<script type='text/javascript' src='js/jquery-1.7.1.min.js'></script>
-	<!-- 
-	Prototype is a JavaScript Framework that aims to ease development of dynamic
-	web applications. (http://www.prototypejs.org/) 
-	-->
-	<script type="text/javascript" src="js/prototype-1.7.js"></script>
-	<!-- 
-	script.aculo.us is a set of JavaScript libraries to enhance the user 
-	interface of web sites. It provides an visual effects engine, a drag and 
-	drop library (including sortable lists), a couple of controls (Ajax-based 
-	autocompletion, in-place editing, sliders) and more.
-	(http://script.aculo.us/) 
-	-->
-	<script type="text/javascript" src="js/scriptaculous-1.9.0.js?load=effects,builder"></script>
-	<!-- 
-	Lightbox is a simple, unobtrusive script used to overlay images on the 
-	current page. It's a snap to setup and works on all modern browsers.
-	(http://www.lokeshdhakar.com/projects/lightbox2/) 
-	-->
-	<script type="text/javascript" src="js/lightbox.js"></script>
-	<!-- 
-	SyntaxHighlighter is a fully functional self-contained code syntax 
-	highlighter developed in JavaScript.
-	(http://alexgorbatchev.com/) -->
-	<script type="text/javascript" src="js/shcore.js"></script>
-	<!-- 
-	At least one brush, here we choose JS. You need to include a brush for 
-	every language you want to highlight 
-	-->
-	<!-- <script type="text/javascript" src="js/shbrushapplescript.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushas3.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushbash.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushcoldfusion.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushcpp.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushcsharp.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushcss.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushdelphi.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushdiff.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrusherlang.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushgroovy.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushjava.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushjavafx.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushjscript.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushperl.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushphp.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushplain.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushpowershell.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushpython.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushruby.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushsass.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushscala.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushsql.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushvb.js"></script> -->
-	<!-- <script type="text/javascript" src="js/shbrushxml.js"></script> -->	
-	<!-- 
-	Syntaxhighlighter autoloader: SyntaxHighlighter comes with almost 30 brushes
-	out of the box. One of the most requested feature has been the ability to 
-	dynamically load them without having to load them all on the same page. 
-	Version 3 addresses this problem with with the new autoloader script. 
-	Setting autoloader up is as simple as adding shAutoloader.js file to your 
-	page and telling autoloader where your brushes are.
-	(http://alexgorbatchev.com/manual/api/autoloader.html) -->
-	<!-- <script type="text/javascript" src="js/shautoloader.js"></script> -->
-	<!-- <script type="text/javascript">
-	SyntaxHighlighter.autoloader(
-	'applescript            js/shbrushapplescript.js',
-	'actionscript3 as3      js/shbrushas3.js',
-	'bash shell             js/shbrushbash.js',
-	'coldfusion cf          js/shbrushcoldfusion.js',
-	'cpp c                  js/shbrushcpp.js',
-	'c# c-sharp csharp      js/shbrushcsharp.js',
-	'css                    js/shbrushcss.js',
-	'delphi pascal          js/shbrushdelphi.js',
-	'diff patch pas         js/shbrushdiff.js',
-	'erl erlang             js/shbrusherlang.js',
-	'groovy                 js/shbrushgroovy.js',
-	'java                   js/shbrushjava.js',
-	'jfx javafx             js/shbrushjavafx.js',
-	'js jscript javascript  js/shbrushjscript.js',
-	'perl pl                js/shbrushperl.js',
-	'php                    js/shbrushphp.js',
-	'text plain             js/shbrushplain.js',
-	'py python              js/shbrushpython.js',
-	'ruby rails ror rb      js/shbrushruby.js',
-	'sass scss              js/shbrushsass.js',
-	'scala                  js/shbrushscala.js',
-	'sql                    js/shbrushsql.js',
-	'vb vbnet               js/shbrushvb.js',
-	'xml xhtml xslt html    js/shbrushxml.js'
-	);</script> -->
-	<script type="text/javascript">SyntaxHighlighter.all();</script>
-	<!-- Cufón -->
-	<!-- 
-	We added some fonts for Cufón, from Microsoft TrueType Core Fonts 
-	(http://corefonts.sourceforge.net/) and some Linux (or gpl-based) fonts. We 
-	follow Micheal Tucks advises 
-	(http://sixrevisions.com/web_design/a-web-designers-guide-to-linux-fonts/)
-	For each font.js used normal/regular, bold, italic/oblique and bold-italic
-	or bold-oblique font types, and it contains: Uppercase, lowercase, numerals,
-	punctuations and Basic Latin. Font files renamed to shortened names for easy
-	to use.
-	-->
-	<script type="text/javascript" src="cufon/cufon-yui.js"></script>
-	<script type="text/javascript" src="js/andale_mono.font.js"></script>
-	<script type="text/javascript" src="js/arial.font.js"></script>
-	<script type="text/javascript" src="js/arial_narrow.font.js"></script>
-	<script type="text/javascript" src="js/bitstream_vera_sans.font.js"></script>
-	<script type="text/javascript" src="js/bitstream_vera_sans_mono.font.js"></script>
-	<script type="text/javascript" src="js/bitstream_vera_serif.font.js"></script>
-	<script type="text/javascript" src="js/century_schoolbook_l.font.js"></script>
-	<script type="text/javascript" src="js/charis_sil.font.js"></script>
-	<script type="text/javascript" src="js/comic_sans_ms.font.js"></script>
-	<script type="text/javascript" src="js/courier_new.font.js"></script>
-	<script type="text/javascript" src="js/dingbats.font.js"></script>
-	<script type="text/javascript" src="js/freemono.font.js"></script>
-	<script type="text/javascript" src="js/freesans.font.js"></script>
-	<script type="text/javascript" src="js/freeserif.font.js"></script>
-	<script type="text/javascript" src="js/gentium.font.js"></script>
-	<script type="text/javascript" src="js/gentiumalt.font.js"></script>
-	<script type="text/javascript" src="js/georgia.font.js"></script>
-	<script type="text/javascript" src="js/impact.font.js"></script>
-	<script type="text/javascript" src="js/liberation_mono.font.js"></script>
-	<script type="text/javascript" src="js/liberation_sans.font.js"></script>
-	<script type="text/javascript" src="js/liberation_sans_narrow.font.js"></script>
-	<script type="text/javascript" src="js/liberation_serif.font.js"></script>
-	<script type="text/javascript" src="js/linux_biolinum.font.js"></script>
-	<script type="text/javascript" src="js/linux_libertine.font.js"></script>
-	<script type="text/javascript" src="js/luxi_mono.font.js"></script>
-	<script type="text/javascript" src="js/luxi_sans.font.js"></script>
-	<script type="text/javascript" src="js/nimbus_mono_l.font.js"></script>
-	<script type="text/javascript" src="js/nimbus_roman_no9_l.font.js"></script>
-	<script type="text/javascript" src="js/nimbus_sans_l.font.js"></script>
-	<script type="text/javascript" src="js/nimbus_sans_l_condensed.font.js"></script>
-	<script type="text/javascript" src="js/standard_symbols_l.font.js"></script>
-	<script type="text/javascript" src="js/times_new_roman.font.js"></script>
-	<script type="text/javascript" src="js/trebuchet_ms.font.js"></script>
-	<script type="text/javascript" src="js/urw_bookman_l.font.js"></script>
-	<script type="text/javascript" src="js/urw_chancery_l.font.js"></script>
-	<script type="text/javascript" src="js/urw_gothic_l.font.js"></script>
-	<script type="text/javascript" src="js/urw_palladio_l.font.js"></script>
-	<script type="text/javascript" src="js/verdana.font.js"></script>
-	<script type="text/javascript" src="js/webdings.font.js"></script>
-	<script type="text/javascript">
-			Cufon.replace('h1'); // Works without a selector engine
-			Cufon.replace('#cufon'); // Requires a selector engine for IE 6-7
-		</script>
-	<!-- Google Analitycs -->
-	<script type="text/javascript">
+<!--Always force latest IE rendering engine & Chrome Frame 
+Use the .htaccess and remove these lines to avoid edge case issues.
+	http://ur1.ca/8ve5b
+-->
+<!--IT SEEMS TO BE INVALID-->
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
-	  _gaq.push(['_trackPageview']);
+<!--Suppress IE6 image toolbar-->
+<!--IT SEEMS TO BE INVALID-->
+<!--<meta http-equiv="imagetoolbar" content="false">-->
 
-	  (function() {
+<!--HTTP-EQUIV TAGS-->
+<!--Specifies the character encoding for the document, but using http-equiv is 
+no longer the only way to specify the character set of an HTML document. You use
+meta charset instead of it, or both of them. Order: Latin-1, Latin-2, UTF-8-->
+<!--<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">-->
+<!--<meta http-equiv="content-type" content="text/html; charset=ISO-8859-2">-->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--Specified the preferred style sheet to use.-->
+<meta http-equiv="default-style" content="css/style.css">
+<!--Defines a time interval for the document to refresh itself.  The value 
+"refresh" should be used carefully, as it takes the control of a page away from
+the user. Using "refresh" will cause a failure in W3C's Web Content 
+Accessibility Guidelines. 
+	http://ur1.ca/k6gz
+-->
+<!--<meta http-equiv="refresh" content="300">-->
+
+<!--META TAGS-->
+<!--We use only proposed meta tags, which are validated by W3C validator. There 
+are some new meta name tag, and some of them, which was valid in HTML4 or 
+XHTML1.x, actually unusable with a valid HTML5 site. We recommend you don't use
+every meta tag, only that you think usefully. You can read and extend full 
+registered HTML5 meta name tag list in WHATWG wiki 
+	http://ur1.ca/8ve5d
+-->
+
+<!--META NAME TAGS-->
+<!--Specifies the name of the Web application that the page represents-->
+<meta name="application-name" content="">
+<!--Author of site-->
+<meta name="author" content="">
+<!--Description of content-->
+<meta name="description" content="">
+<!--Designer's name-->
+<meta name="designer" content="">
+<!--Generator or editor software-->
+<meta name="generator" content="">
+<!--Keywords-->
+<meta name="keywords" content="">
+<!--Publisher's name-->
+<meta name="publisher" content="">
+<!--Content rating-->
+<meta name="rating" content="Safe for kids|General|14 Years|Mature|Restricted">
+<!--How often recrawl the page by search engines-->
+<meta name="revisit-after" content="7 days|1 month|3 months|1 year">
+<!--Rights-->
+<meta name="rights-standard" content="pd|cc by-sa|cc by-nd|cc by-nc|cc by-nc-sa
+|cc by-nc-nd">
+<!--How search engine crawlers should treat the content-->
+<meta name="robots" content="all|follow|index|noarchive|noindex|nofollow|none">
+
+<!--Company-related META NAME TAGS-->
+<!--As against general meta name tags, following tags related on companies-->
+
+<!--ALEXA-->
+<!--Used to verify ownership of Alexa Search 
+	http://ur1.ca/8ve5g
+-->
+<meta name="alexaverifyid" content="">
+
+<!--BAIDUS-->
+<!--Synonym of robots for targeting Baidu only. 
+	http://ur1.ca/8ve5h
+-->
+<meta name="baiduspider" content="">
+
+<!--CITESEERX-->
+<!--Synonym of robots for targeting CiteSeerX only. 
+	http://ur1.ca/8ve5j
+-->
+<!--IT SEEMS TO BE INVALID, USE ROBOTS.TXT INSTEAD OF THIS METATAG-->
+<!--<meta name="citeseerxbot" content="">-->
+
+<!--EASYCMS-->
+<!--Object Title, where this is not the TITLE or H1 tag content, but the 
+resource title 
+	http://ur1.ca/8ve5k
+-->
+<meta name="es.title" content="">
+
+<!--ESSAYDIRECTORY-->
+<!--Defines a custom description of websites listed in EssayDirectory.com 
+	http://ur1.ca/8ve5m
+-->
+<meta name="EssayDirectory" content="">
+
+<!--OPENSEARCH-->
+<!--Used to identify the index of the first search result in the current set of 
+search results. 
+	http://ur1.ca/8ve5n
+-->
+<meta name="startIndex" content="">
+<!--Used to identify the number of search results returned per page. 
+	http://ur1.ca/8ve5n
+-->
+<meta name="itemsPerPage" content="">
+<!--Used to identify the number of search results available for the current 
+search. 
+	http://ur1.ca/8ve5n
+-->
+<meta name="totalResults" content="">
+
+<!--NORTON-->
+<!--Used to verify ownership of Website for Norton SafeWeb. 
+	http://ur1.ca/8ve5q
+-->
+<meta name="norton-safeweb-site-verification" content="">
+
+<!--RESTRICTED TO ADULTS LABEL-->
+<!--Rating tag is not same with earlier rating tag (which can use "all|children|
+youngs|seniors" content values. The Restricted to Adults label (RTA) provides a 
+way for adult oriented websites to indicate that their content is off limits to 
+children. RTA was introduced in 2006 and is currently used by a large number of 
+adult web content providers. RTA is recognized by all major parental control 
+filters. 
+	http://ur1.ca/8ve5t
+-->
+<meta name="rating" content="RTA-5042-1996-1400-1577-RTA">
+
+<!--SKYPE-->
+<!--Prevents the Skype browser extension from automatically seeking through the 
+page and replacing telephone numbers (or any number the program's algorithm 
+thinks is a telephone number) with its own custom presentation that allows 
+direct invocation of the Skype program to call the telephone number. 
+	http://ur1.ca/8ve5u
+-->
+<!--IT SEEMS TO BE INVALID-->
+<!--<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">-->
+
+<!--YAHOO-->
+<!--Used to verify ownership for Yahoo! Site Explorer 
+	http://ur1.ca/8ve5v
+-->
+<meta name="y_key" content="">
+<!--Synonym of robots for targeting Yahoo! only. 
+	http://ur1.ca/8ve5v
+-->
+<meta name="slurp" content="">
+
+<!--TEOMA, ASK.COM-->
+<!--Synonym of robots for targeting Teoma and Ask.com only. 
+	http://ur1.ca/8ve62
+-->
+<meta name="teoma" content="">
+
+<!--YANDEX-->
+<!--Used to verify ownership for Yandex Webmaster. 
+	http://ur1.ca/8ve66
+-->
+<meta name="yandex-verification" content="">
+
+<!--HEALTH CANADA WEB METADATA APPLICATION PROFILE MARCH 2009-->
+<!--The date a resource is scheduled for review by content creator in order to 
+determine if it should be archived, updated or retained as is. 
+	http://ur1.ca/8ve68
+-->
+<meta name="review_date" content="">
+<!--The date used to indicate that the Metadata has been prepared and/or 
+reviewed and approved by the Metadata Unit. Its purpose is administrative. 
+(Used by "Autonomy".) 
+	http://ur1.ca/8ve68
+-->
+<meta name="meta_date" content="">
+
+<!--MOBILE OPTIMIZATION-->
+<!--Denotes handheld-friendly content 
+The value of the META tag is "true" for mobile markup and "false" for 
+desktop-optimized HTML.-->
+<meta name="HandheldFriendly" content="true|false">
+<!--Denotes content optimized for mobile browsers 
+	http://ur1.ca/8ve6k
+	Smartphone - content="176"
+	Pocker PC - content="240"
+	Pocket PC with high DPI - content="480"
+The suggested default setting is that of a Pocket PC or 240.-->
+<meta name="MobileOptimized" content="176|240|480">
+
+<!--MARKOSWEB-->
+<!--Used to verify ownership of Markosweb.com 
+	http://ur1.ca/8ve6n
+-->
+<!--IT SEEMS TO BE INVALID-->
+<!--<meta name="markosweb.com/validation" content="">-->
+
+<!--APPLE-->
+<!--Sets whether a web application runs in full-screen mode. If content is set 
+to yes, the web application runs in full-screen mode; otherwise, it does not. 
+The default behavior is to use Safari to display web content. 
+	http://ur1.ca/8ve6p
+-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--Sets the style of the status bar for a web application. This meta tag has no
+effect unless you first specify full-screen mode as described in 
+"apple-mobile-web-app-capable"If content is set to default, the status bar 
+appears normal. If set to black, the status bar has a black background.
+If set to black-translucent, the status bar is black and translucent. If set
+to default or black, the web content is displayed below the status bar. 
+If set to black-translucent, the web content is displayed on the entire screen,
+partially obscured by the status bar. The default value is default.-->
+<meta name="apple-mobile-web-app-status-bar-style" content="default|black|
+black-translucent">
+<!--Enables or disables automatic detection of possible phone numbers in a 
+webpage in Safari on iOS. By default, Safari on iOS detects any string formatted
+like a phone number and makes it a link that calls the number. Specifying 
+telephone=no disables this feature.-->
+<meta name="format-detection" content="telephone=no">
+<!--Mobile Viewport Fix
+	http://ur1.ca/8ve6q
+	http://ur1.ca/8ve6r
+device-width : Occupy full width of the screen in its current orientation
+initial-scale = 1.0 retains dimensions instead of zooming out if page 
+height > device height
+maximum-scale = 1.0 retains dimensions instead of zooming in if page 
+width < device width-->
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!--GOOGLE-->
+<!--Used to verify ownership for Webmaster Tools. 
+	http://ur1.ca/8ve6u
+-->
+<meta name="google-site-verification" content="">
+<!--Synonym of robots for targeting Googlebot only. 
+	http://ur1.ca/8ve6y
+-->
+<meta name="googlebot" content="">
+<!--Legacy verification for Google Sitemaps. 
+	http://ur1.ca/8ve75
+-->
+<meta name="verify-v1" content="">
+
+<!--MICROSOFT-->
+<!--The "application-name" metadata defines the name of the Pinned Site 
+application instance. This is the name that appears in a tooltip when hovering 
+over the Pinned Site button on the Windows 7 taskbar. The application name is 
+also appended to the window title of the Pinned Site application instance.-->
+<meta name="application-name" content="">
+<!--Jump List items act as entry points into the website even when the browser 
+is not running. A Jump List can contain commonly used destinations and tasks.
+Some items apply to the whole site, and some apply only to specific users. 
+	http://ur1.ca/8ve76
+-->
+<meta name="msapplication-task" content="">
+<!--The "msapplication-starturl" metadata contains the root URL of the 
+application. The start URL can be fully qualified, or relative to the current 
+document. Only HTTP and HTTPS protocols are allowed. If this element is missing,
+the address of the current page is used instead. 
+	http://ur1.ca/8ve78
+-->
+<meta name="msapplication-starturl" content="">
+<!--The "msapplication-tooltip" metadata provides additional tooltip text that 
+appears when you hover over the Pinned Site shortcut in the Windows Start menu 
+or on the desktop. 
+	http://ur1.ca/8ve78
+-->
+<meta name="msapplication-tooltip" content="">
+<!--The "msapplication-navbutton-color" metadata define the custom color of the 
+Back and Forward buttons in the Pinned Site browser window. Any named color, or 
+hex color value is valid.
+	http://ur1.ca/8ve78
+-->
+<meta name="msapplication-navbutton-color" content="">
+<!--The "msapplication-window" metadata sets the initial size of the Pinned Site
+window when it is launched for the first time. However, if the user adjusts the
+size of the window, the Pinned Site retains the new dimensions when it is 
+launched again. The following properties can be used in the value of the content
+attribute: 
+width - The window width in pixels. The minimum value is 800. 
+height - The window height in pixels. The minimum value is 600.
+	http://ur1.ca/8ve78
+-->
+<meta name="msapplication-window" content="">
+<!--Place this element between tasks to place a visible line in the Jump List 
+menu. The separators must be made unique by declaring content="[unique value]" 
+if you have more than one.-->
+<!--IT SEEMS TO BE INVALID-->
+<!--<meta name="msapplication-task-separator" content="">-->
+<!--One of the verification elements used by Bing. 
+	http://ur1.ca/8ve7d
+-->
+<meta name="msvalidate.01" content="">
+
+<!--WEB-TRENDS
+	http://ur1.ca/8ve7g
+-->
+<!--Name of the Content Group
+Used to configure the appropriate Webtrends advanced feature. These are just 
+some of the more popular ones. These appear in your META tags. - showing you the
+web page, the source (meta tag), the log files entry and the subsequent WT 
+report.-->
+<meta name="wt.cg_n" content="">
+<!--Name of Content Sub-Group
+Used to configure the appropriate Webtrends advanced feature. These are just 
+some of the more popular ones. These appear in your META tags. - showing you the
+web page, the source (meta tag), the log files entry and the subsequent WT 
+report.-->
+<meta name="wt.cg_s" content="">
+<!--Advertising Click parameter
+When a visitor to your site clicks on an ad, that action is referred to as an Ad
+Click. The following META tag tracks advertising clicks:
+<META NAME="WT.ac" CONTENT="name"> 
+Defines the name of the advertisement clicked to reach a particular web page. 
+The Ad Click must contain an external redirect back to the client. The redirect
+needs to include the necessary code to generate a hit to the SDC server. You can
+designate multiple Advertising Clicks using semicolons. Examples:
+<a href="file111.html?WT.ac=CONTENT111">
+<a href="file222.html?WT.ac=CONTENT222">
+The name of the advertisement clicked to reach a particular web page. To capture
+this information with DCS, the Advertising Click must contain an external 
+redirect back to the client. The redirect needs toinclude the necessary code to
+generate a hit to the DCS. The maximum length for each name is 64 bytes.-->
+<meta name="wt.ac" content="">
+<!--Advertising View parameter
+Visitors often view advertisements that they do not necessarily click on. You 
+can use On-Site Advertising to determine the number of visitors to your web site
+who view particular ads. With this feature you can produce advertising reports 
+for each of your clients. If you are selling advertisingspace on your web site,
+for example, you can collect traffic statistics to help determine pricing 
+schedules. An Ad View occurs when a visitor views a page containing an ad. An ad
+is a link or graphic that contains an Ad Click parameter in the query portion of
+it's URL.-->
+<meta name="wt.ad" content="">
+<!--Identifies the ID of the marketing campaign
+To attract new students, a university launches a marketing campaign by sending
+recruitment email to all graduating high school seniors in a metropolitan area.
+The email links to a special landing page in the university's web site,
+containing the following META tag to track marketing campaigns.
+Example:
+<META NAME="WT.mc_id" CONTENT="1X2GG34">
+You may use this parameter on the URL. 
+Example:
+<a href="link?WT.mc_id=1X2GG34">
+The Campaign ID 1X2GG34 represents recruits to be contacted by email-->
+<meta name="wt.mc_id" content="">
+<!--Tracking Servers parameter
+If your site is hosted on multiple servers, a server cluster, or a server farm,
+and you want to evaluate the performance of your load balancer, Webtrends can 
+track page views for each server. To do so, populate the following META tag on 
+all pages on each server: 
+Example:
+<meta name="WT.sv" content="My Server">
+Defines the name of the machine that serves the web page. If you have two 
+servers (Server1 and Server2), you would make two copies of the META tag and 
+designate CONTENT="Server1" for deployment to pages on the first server and 
+CONTENT="Server2" for deployment to the same pages on the second server. For a 
+server farm, you can extract the value of the built-in server name and 
+dynamically assign it to the META tag using server-side scripting. 
+Example:
+<meta name="WT.sv" content="Server1">
+<meta name="WT.sv" content="Server2">
+An Ad View occurs when a visitor views a page containing an ad. An ad is a link 
+or graphic that contains an Ad Click parameter in the query portion of it's URL
+	http://ur1.ca/8ve7l
+-->
+<meta name="wt.sv" content="">
+<!--Tracking Page Titles
+You may want to modify a page title before sending it to Webtrends in the 
+following cases:
+You are dealing with dynamic content pages identified by URL parameters, and the
+page title represents the title of the base URL page rather than the dynamic 
+content page. Unless you modify the page titles, all pages have the same title 
+in the reports. All pages have been assigned the same title, for reasons of 
+style or company policy. Even though URLs are displayed in addition to page 
+title, the entire URL cannot be depended upon to distinguish one page from 
+another.
+Use server-side scripts to change the title to something that reflects the 
+content of the pages so that you can identify them in reports. Next, pass the 
+customized page titles to Webtrends, using the following META tag:
+<META NAME="WT.ti" CONTENT="title">
+Defines the name of the title for this page.-->
+<meta name="wt.ti" content="">
+
+<!--GLOBRIX
+	http://ur1.ca/8ve7m
+-->
+<!--Globrix property information: Property to Buy or Rent-->
+<meta name="globrix.instruction" content="">
+<!--Globrix property information: Price for the property-->
+<meta name="globrix.price" content="">
+<!--Globrix property information: Postcode of the property-->
+<meta name="globrix.postcode" content="">
+<!--Globrix property information: Number of bedrooms the property has-->
+<meta name="globrix.bedrooms" content="">
+<!--Globrix property information: Number of bathrooms the property has-->
+<meta name="globrix.bathrooms" content="">
+<!--Globrix property information: Type of property e.g. 'detatched house'-->
+<meta name="globrix.type" content="">
+<!--Globrix property information: Condition of the property e.g. 'renovated'-->
+<meta name="globrix.condition" content="">
+<!--Globrix property information: Features of the property e.g. 'double glazing'
+-->
+<meta name="globrix.features" content="">
+<!--Globrix property information: External features of the property e.g.'garden'
+-->
+<meta name="globrix.outsidespace" content="">
+<!--Globrix property information: Parking available for property e.g. 'parking 
+for 2 cars'-->
+<meta name="globrix.parking" content="">
+<!--Globrix property information: Period of the property e.g. 'victorian 
+terrace'-->
+<meta name="globrix.period" content="">
+<!--Globrix property information: If the property price is only available on 
+application-->
+<meta name="globrix.poa" content="">
+<!--Globrix property information: The tenure of the property e.g. 'leasehold'-->
+<meta name="globrix.tenure" content="">
+<!--Globrix property information: Indicates if the property is under offer-->
+<meta name="globrix.underoffer" content="">
+<!--Globrix property information: The region of the attached price e.g. 'guide 
+price of'-->
+<meta name="globrix.priceproximity" content="">
+<!--Globrix property information: The latitude of the property-->
+<meta name="globrix.latitude" content="">
+<!--Globrix property information: The longitude of the property-->
+<!--IT SEEMS TO BE INVALID-->
+<!--<meta name="globrix.longitude" content="">-->
+
+<!--RUBY
+	http://ur1.ca/8ve7q
+	http://ur1.ca/8ve7s
+-->
+<!--Cross-site request forgery protection parameter for Ruby on Rails-->
+<meta name="csrf-token" content="">
+<!--Cross-site request forgery protection token for Ruby on Rails-->
+<meta name="csrf-param" content="">
+
+<!--THE OPEN GRAPH PROTOCOL
+	http://ur1.ca/8ve7t
+It needs: <html prefix="og: http://ogp.me/ns#">-->
+<!--IT SEEMS TO BE INVALID-->
+<!--A URL to an audio file to accompany this object.-->
+<!--<meta property="og:audio" content="">-->
+<!--A one to two sentence description of your object.-->
+<!--<meta property="og:description" content="">-->
+<!--The word that appears before this object's title in a sentence. An enum of 
+(a, an, the, "", auto). If auto is chosen, the consumer of your data should 
+chose between 'a' or 'an'. Default is '' (blank).-->
+<!--<meta property="og:determiner" content="">-->
+<!--An image URL which should represent your object within the graph.-->
+<!--<meta property="og:image" content="">-->
+<!--The locale these tags are marked up in. Of the format language_TERRITORY. 
+Default is en_US.-->
+<!--<meta property="og:locale" content="">-->
+<!--An array of other locales this page is available in.-->
+<!--<meta property="og:locale:alternate" content="">-->
+<!--If your object is part of a larger web site, the name which should be 
+displayed for the overall site. e.g., "IMDb".-->
+<!--<meta property="og:site_name" content="">-->
+<!--The title of your object as it should appear within the graph, e.g. 
+"The Rock".-->
+<!--<meta property="og:title" content="">-->
+<!--The type of your object, e.g., 'video.movie'. Depending on the type you 
+specify, other properties may also be required.-->
+<!--<meta property="og:type" content="">-->
+<!--The canonical URL of your object that will be used as its permanent ID in 
+the graph.-->
+<!--<meta property="og:url" content="">-->
+<!--A URL to a video file that complements this object.-->
+<!--<meta property="og:video" content="">-->
+
+<!--DUBLIN CORE TAGS-->
+<!--New Dublin Core nomenclature, you use "dcterms.tag" instead of old "dc.tag" 
+form. We recommend you don't use every DC tag, only that you thought usefully. 
+	http://ur1.ca/4f9vh
+-->
+<!--Date of publication for Google News. The format of the content is YYYY-MM-DD
+or YYYY-MM-DDThh:mm:ssTZD.-->
+<meta name="dc.date.issued" content="">
+<!--A language of the resource. Recommended best practice is to use a controlled
+vocabulary such as RFC 4646-->
+<meta name="dc.language" content="">
+<!--A summary of the resource.-->
+<meta name="dcterms.abstract" content="">
+<!--Information about who can access the resource or an indication of its 
+security status.-->
+<meta name="dcterms.accessRights" content="">
+<!--The method by which items are added to a collection-->
+<meta name="dcterms.accrualMethod" content="">
+<!--The frequency with which items are added to a collection.-->
+<meta name="dcterms.accrualPeriodicity" content="">
+<!--The policy governing the addition of items to a collection.-->
+<meta name="dcterms.accrualPolicy" content="">
+<!--An alternative name for the resource.-->
+<meta name="dcterms.alternative" content="">
+<!--A class of entity for whom the resource is intended or useful.-->
+<meta name="dcterms.audience" content="">
+<!--Date (often a range) that the resource became or will become available.-->
+<meta name="dcterms.available" content="">
+<!--A bibliographic reference for the resource.-->
+<meta name="dcterms.bibliographicCitation" content="">
+<!--An established standard to which the described resource conforms.-->
+<meta name="dcterms.conformsTo" content="">
+<!--An entity responsible for making contributions to the content of the 
+resource.-->
+<meta name="dcterms.contributor" content="">
+<!--The spatial or temporal topic of the resource, the spatial applicability of 
+the resource, or the jurisdiction under which the resource is relevant.-->
+<meta name="dcterms.coverage" content="">
+<!--Date of creation of the resource.-->
+<meta name="dcterms.created" content="">
+<!--An entity primarily responsible for making the resource. Examples of a 
+Creator include a person, an organization, or a service.-->
+<meta name="dcterms.creator" content="">
+<!--A point or period of time associated with an event in the lifecycle of the 
+resource.-->
+<meta name="dcterms.date" content="">
+<!--Date of acceptance of the resource.-->
+<meta name="dcterms.dateAccepted" content="">
+<!--Date of copyright.-->
+<meta name="dcterms.dateCopyrighted" content="">
+<!--Date of submission of the resource.-->
+<meta name="dcterms.dateSubmitted" content="">
+<!--An account of the resource. Description may include but is not limited to: 
+an abstract, a table of contents, a graphical representation, or a free-text 
+account of the resource.-->
+<meta name="dcterms.description" content="">
+<!--A class of entity, defined in terms of progression through an educational or
+training context, for which the described resource is intended.-->
+<meta name="dcterms.educationLevel" content="">
+<!--The size or duration of the resource.-->
+<meta name="dcterms.extent" content="">
+<!--The file format, physical medium, or dimensions of the resource.-->
+<meta name="dcterms.format" content="">
+<!--A related resource that is substantially the same as the pre-existing 
+described resource, but in another format.-->
+<meta name="dcterms.hasFormat" content="">
+<!--A related resource that is included either physically or logically in the 
+described resource.-->
+<meta name="dcterms.hasPart" content="">
+<!--A related resource that is a version, edition, or adaptation of the 
+described resource.-->
+<meta name="dcterms.hasVersion" content="">
+<!--An unambiguous reference to the resource within a given context.-->
+<meta name="dcterms.identifier" content="">
+<!--A process used to engender knowledge, attitudes and skills, that the 
+described resource is designed to support.-->
+<meta name="dcterms.instructionalMethod" content="">
+<!--A related resource that is substantially the same as the described resource,
+but in another format.-->
+<meta name="dcterms.isFormatOf" content="">
+<!--A related resource in which the described resource is physically or 
+logically included.-->
+<meta name="dcterms.isPartOf" content="">
+<!--A related resource that references, cites, or otherwise points to the 
+described resource.-->
+<meta name="dcterms.isReferencedBy" content="">
+<!--A related resource that supplants, displaces, or supersedes the described 
+resource.-->
+<meta name="dcterms.isReplacedBy" content="">
+<!--A related resource that requires the described resource to support its 
+function, delivery, or coherence.-->
+<meta name="dcterms.isRequiredBy" content="">
+<!--Date of formal issuance (e.g., publication) of the resource. (DC doesn't 
+spec a date format but the established practice is YYYY-MM-DD.)-->
+<meta name="dcterms.issued" content="">
+<!--A related resource of which the described resource is a version, edition, or
+adaptation.-->
+<meta name="dcterms.isVersionOf" content="">
+<!--A language of the resource. Recommended best practice is to use a controlled
+vocabulary such as RFC 4646-->
+<meta name="dcterms.language" content="">
+<!--A legal document giving official permission to do something with the 
+resource.-->
+<meta name="dcterms.license" content="">
+<!--An entity that mediates access to the resource and for whom the resource is 
+intended or useful.-->
+<meta name="dcterms.mediator" content="">
+<!--The material or physical carrier of the resource.-->
+<meta name="dcterms.medium" content="">
+<!--Date on which the resource was changed. (DC doesn't spec a date format but 
+the established practice is YYYY-MM-DD.)-->
+<meta name="dcterms.modified" content="">
+<!--A statement for any changes in ownership and custody of the resource since 
+its creation that are significant for its authenticity, integrity, and 
+interpretation.-->
+<meta name="dcterms.provenance" content="">
+<!--An entity responsible for making the resource available.-->
+<meta name="dcterms.publisher" content="">
+<!--A related resource that is referenced, cited, or otherwise pointed to by the
+described resource.-->
+<meta name="dcterms.references" content="">
+<!--A related resource.-->
+<meta name="dcterms.relation" content="">
+<!--A related resource that is supplanted, displaced, or superseded by the 
+described resource.-->
+<meta name="dcterms.replaces" content="">
+<!--A related resource that is required by the described resource to support its
+function, delivery, or coherence.-->
+<meta name="dcterms.requires" content="">
+<!--Information about rights held in and over the resource. copyright|gnu gplv3|
+gnu lgplv3|gnu agplv3|gnu fdlv1.3|cc by-sa|cc by-nd|cc by-nc|cc by-nc-sa|
+cc by-nc-nd|pd-->
+<meta name="dcterms.rights" content="">
+<!--A person or organization owning or managing rights over the resource.-->
+<meta name="dcterms.rightsHolder" content="">
+<!--A related resource from which the described resource is derived.-->
+<meta name="dcterms.source" content="">
+<!--Spatial characteristics of the resource.-->
+<meta name="dcterms.spatial" content="">
+<!--The topic of the resource.-->
+<meta name="dcterms.subject" content="">
+<!--A list of subunits of the resource.-->
+<meta name="dcterms.tableOfContents" content="">
+<!--Temporal characteristics of the resource.-->
+<meta name="dcterms.temporal" content="">
+<!--A name given to the resource.-->
+<meta name="dcterms.title" content="">
+<!--The nature or genre of the resource.-->
+<meta name="dcterms.type" content="">
+<!--Date (often a range) of validity of a resource.-->
+<meta name="dcterms.valid" content="">
+
+<!--GEO-TAGS
+	http://ur1.ca/8ve7x
+	http://ur1.ca/8ve7y
+-->
+<!--Case-insensitive ISO 3166-1 alpha-2 code of a country to which the page is 
+related to.-->
+<meta name="geo.country" content="">
+<!--Defines name of geographic place to which page is related to.
+	http://ur1.ca/8ve82
+-->
+<meta name="geo.placename" content="">
+<!--Defines geographic position to which page is related to
+	http://ur1.ca/8ve82
+-->
+<meta name="geo.position" content="">
+<!--Defines name of geographic region to which page is related to. Content is 
+specified by ISO-3166.
+	http://ur1.ca/8ve85
+-->
+<meta name="geo.region" content="">
+<!--Defines geographic position to which page is related to. The acronym stands 
+for ICBM Intercontinental Ballistic Missile - an old, humorous allusion to the 
+possible use of such coordinates.
+	http://ur1.ca/8ve86
+-->
+<meta name="icbm" content="">
+
+<!--LINKS-->
+<!--Firstly we adding some explanation for links, after addng some usable 
+example.-->
+<!--Links to an alternate version of the document (i.e. print page, translated 
+or mirror)-->
+<link rel="alternate" href="example.com">
+<!--Links to the author of the document-->
+<link rel="author" href="example.com">
+<!--Links to a help document-->
+<link rel="help" href="example.com">
+<!--Imports an icon to represent the document-->
+<link rel="icon" href="example.com">
+<!--Links to copyright information for the document-->
+<link rel="license" href="example.com">
+<!--Indicates that the document is a part of a series, and that the next 
+document in the series is the referenced document-->
+<link rel="next" href="example.com">
+<!--Specifies that the target resource should be cached-->
+<link rel="prefetch" href="example.com">
+<!--Indicates that the document is a part of a series, and that the previous 
+document in the series is the referenced document-->
+<link rel="prev" href="example.com">
+<!--Links to a search tool for the document-->
+<link rel="search" href="example.com">
+<!--URL to a style sheet to import-->
+<link rel="stylesheet" href="example.com">
+
+<!--Direct search spiders to your sitemap-->
+<!--IT SEEMS TO BE INVALID-->
+<!--
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"> 
+-->
+
+<!--Browser Search plugin
+	http://ur1.ca/45syo
+-->
+<link rel="search" title="title" type="application/opensearchdescription+xml" 
+href="/search.xml">
+
+<!--Canonical URL
+Signal to search engines and others "Use this URL for this page!"-->
+<link rel="canonical" href="">
+
+<!--Official shortlink
+Signal to the world "This is the shortened URL to use this page!" Poorly 
+supported at this time.
+	http://ur1.ca/8ve89
+-->
+<link rel="shortlink" href="h5temp.com">
+
+<!--RSS
+	http://ur1.ca/8ve8c
+-->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+
+<!--ATOM
+	http://ur1.ca/8ve8e
+-->
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
+
+<!--Pingback
+	http://ur1.ca/8ve8g
+-->
+<link rel="pingback" href="pingbackservice.com">
+
+<!--humans.txt
+	http://ur1.ca/8ve8h
+-->
+<link rel="author" href="/humans.txt">
+
+<!--ICONS-->
+<!--Place favicon.ico and apple-touch-icon.png in the root directory: 
+	http://ur1.ca/8ve8j
+-->
+<!--For old IE type="image/vnd.microsoft.icon" isn't recommended, use instead 
+type="image/x-icon" or nothing.-->
+<!--[if !(IE)]><!-->
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<!--<![endif]-->
+<!--[if IE]>
+<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
+<![endif]-->
+<!--This is the traditional favicon.
+	size: 16x16 or 32x32
+	transparency is OK
+	see wikipedia for info on browser support: 
+	http://ur1.ca/8ve9c
+-->
+<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon.png">
+<!--The is the icon for iOS's Web Clip.
+	size: 57x57 for older iPhones
+	72x72 for iPads
+	114x114 for  iPhone4's retina display 
+	(IMHO, just go ahead and use the biggest one)
+ 	To prevent iOS from applying its styles to the icon name it thusly: 
+	apple-touch-icon-precomposed.png
+	Transparency is not recommended (iOS will put a black BG behind the icon)-->
+<!--STYLE-->
+<base href="www.website.com">
+<!--Site's own design-->
+<link rel="stylesheet" href="css/style.css"  type="text/css">
+<!--Lightbox-stylesheet, see below the scripts-->
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
+<!--Syntaxhighlighter-stylesheets, see below the scripts 
+Include at least the core style and default theme, and/or you uncomment what you
+want use-->
+<link rel="stylesheet" href="css/shcore.css" type="text/css">
+<!--<link rel="stylesheet" href="css/shcoredefault.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shcoredjango.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shcoreeclipse.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shcoreemacs.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shcorefadetogrey.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shcoremdultra.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shcoremidnight.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shcorerdark.css" type="text/css">-->
+<link rel="stylesheet" href="css/shthemedefault.css" type="text/css"> 
+<!--<link rel="stylesheet" href="css/shthemedjango.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shthemeeclipse.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shthemeemacs.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shthemefadetogrey.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shthememdultra.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shthemedefault.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shthememidnight.css" type="text/css">-->
+<!--<link rel="stylesheet" href="css/shthemerdark.css" type="text/css">-->
+
+<!--SCRIPTS-->
+<!--You can add your javascript in to your site before body (classic way) or 
+after body for faster loading. We recommend the classic way, but it is your 
+choice. We add some js for this template, and you can add (or remove) your own 
+scripts too.-->
+<!--Modernizr is an open-source JavaScript library that helps you build the next
+generation of HTML5 and CSS3-powered websites. 
+	http://ur1.ca/8ve8m
+-->
+<script type='text/javascript' src='js/modernizr-2.5.3.js'></script>
+<!--jQuery is a fast and concise JavaScript Library that simplifies HTML 
+document traversing, event handling, animating, and Ajax interactions for rapid 
+web development. jQuery is designed to change the way that you write JavaScript.
+	http://ur1.ca/txqa
+-->
+<script type='text/javascript' src='js/jquery-1.7.1.min.js'></script>
+<!--Prototype is a JavaScript Framework that aims to ease development of dynamic
+web applications. 
+	http://ur1.ca/8ve8s
+-->
+<script type="text/javascript" src="js/prototype-1.7.js"></script>
+<!--script.aculo.us is a set of JavaScript libraries to enhance the user 
+interface of web sites. It provides an visual effects engine, a drag and drop 
+library (including sortable lists), a couple of controls (Ajax-based 
+autocompletion, in-place editing, sliders) and more.
+	http://ur1.ca/1bws
+-->
+<script type="text/javascript" 
+		src="js/scriptaculous-1.9.0.js?load=effects,builder"></script>
+<!--Lightbox is a simple, unobtrusive script used to overlay images on the 
+current page. It's a snap to setup and works on all modern browsers.
+	http://ur1.ca/8uvlh
+-->
+<script type="text/javascript" src="js/lightbox.js"></script>
+<!--SyntaxHighlighter is a fully functional self-contained code syntax 
+highlighter developed in JavaScript.
+	http://ur1.ca/8ve8u
+-->
+<script type="text/javascript" src="js/shcore.js"></script>
+<!--At least one brush, here we choose JS. You need to include a brush for every
+language you want to highlight-->
+<!--<script type="text/javascript" src="js/shbrushapplescript.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushas3.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushbash.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushcoldfusion.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushcpp.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushcsharp.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushcss.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushdelphi.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushdiff.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrusherlang.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushgroovy.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushjava.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushjavafx.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushjscript.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushperl.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushphp.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushplain.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushpowershell.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushpython.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushruby.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushsass.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushscala.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushsql.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushvb.js"></script>-->
+<!--<script type="text/javascript" src="js/shbrushxml.js"></script>-->
+<!--Syntaxhighlighter autoloader: SyntaxHighlighter comes with almost 30 brushes
+out of the box. One of the most requested feature has been the ability to 
+dynamically load them without having to load them all on the same page. Version 
+3 addresses this problem with with the new autoloader script. Setting autoloader
+up is as simple as adding shAutoloader.js file to your page and telling 
+autoloader where your brushes are.
+	http://ur1.ca/8ve8y
+-->
+<!--<script type="text/javascript" src="js/shautoloader.js"></script>-->
+<!--<script type="text/javascript">
+SyntaxHighlighter.autoloader(
+'applescript            js/shbrushapplescript.js',
+'actionscript3 as3      js/shbrushas3.js',
+'bash shell             js/shbrushbash.js',
+'coldfusion cf          js/shbrushcoldfusion.js',
+'cpp c                  js/shbrushcpp.js',
+'c# c-sharp csharp      js/shbrushcsharp.js',
+'css                    js/shbrushcss.js',
+'delphi pascal          js/shbrushdelphi.js',
+'diff patch pas         js/shbrushdiff.js',
+'erl erlang             js/shbrusherlang.js',
+'groovy                 js/shbrushgroovy.js',
+'java                   js/shbrushjava.js',
+'jfx javafx             js/shbrushjavafx.js',
+'js jscript javascript  js/shbrushjscript.js',
+'perl pl                js/shbrushperl.js',
+'php                    js/shbrushphp.js',
+'text plain             js/shbrushplain.js',
+'py python              js/shbrushpython.js',
+'ruby rails ror rb      js/shbrushruby.js',
+'sass scss              js/shbrushsass.js',
+'scala                  js/shbrushscala.js',
+'sql                    js/shbrushsql.js',
+'vb vbnet               js/shbrushvb.js',
+'xml xhtml xslt html    js/shbrushxml.js'
+);
+</script>-->
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!--Cufón-->
+<!--We added some fonts for Cufón, from Microsoft TrueType Core Fonts 
+(http://corefonts.sourceforge.net/) and some Linux (or gpl-based) fonts. We 
+follow Micheal Tucks advises 
+	http://ur1.ca/8ve8z
+For each font.js used normal/regular, bold, italic/oblique and bold-italic or 
+bold-oblique font types, and it contains: Uppercase, lowercase, numerals, 
+punctuations and Basic Latin. Font files renamed to shortened names for easy to 
+use.-->
+<script type="text/javascript" src="cufon-yui.js"></script>
+<script type="text/javascript" src="js/andale_mono.font.js"></script>
+<script type="text/javascript" src="js/arial.font.js"></script>
+<script type="text/javascript" src="js/arial_narrow.font.js"></script>
+<script type="text/javascript" src="js/bitstream_vera_sans.font.js"></script>
+<script type="text/javascript" 
+		src="js/bitstream_vera_sans_mono.font.js"></script>
+<script type="text/javascript" src="js/bitstream_vera_serif.font.js"></script>
+<script type="text/javascript" src="js/century_schoolbook_l.font.js"></script>
+<script type="text/javascript" src="js/charis_sil.font.js"></script>
+<script type="text/javascript" src="js/comic_sans_ms.font.js"></script>
+<script type="text/javascript" src="js/courier_new.font.js"></script>
+<script type="text/javascript" src="js/dingbats.font.js"></script>
+<script type="text/javascript" src="js/freemono.font.js"></script>
+<script type="text/javascript" src="js/freesans.font.js"></script>
+<script type="text/javascript" src="js/freeserif.font.js"></script>
+<script type="text/javascript" src="js/gentium.font.js"></script>
+<script type="text/javascript" src="js/gentiumalt.font.js"></script>
+<script type="text/javascript" src="js/georgia.font.js"></script>
+<script type="text/javascript" src="js/impact.font.js"></script>
+<script type="text/javascript" src="js/liberation_mono.font.js"></script>
+<script type="text/javascript" src="js/liberation_sans.font.js"></script>
+<script type="text/javascript" src="js/liberation_sans_narrow.font.js"></script>
+<script type="text/javascript" src="js/liberation_serif.font.js"></script>
+<script type="text/javascript" src="js/linux_biolinum.font.js"></script>
+<script type="text/javascript" src="js/linux_libertine.font.js"></script>
+<script type="text/javascript" src="js/luxi_mono.font.js"></script>
+<script type="text/javascript" src="js/luxi_sans.font.js"></script>
+<script type="text/javascript" src="js/nimbus_mono_l.font.js"></script>
+<script type="text/javascript" src="js/nimbus_roman_no9_l.font.js"></script>
+<script type="text/javascript" src="js/nimbus_sans_l.font.js"></script>
+<script type="text/javascript" 
+		src="js/nimbus_sans_l_condensed.font.js"></script>
+<script type="text/javascript" src="js/standard_symbols_l.font.js"></script>
+<script type="text/javascript" src="js/times_new_roman.font.js"></script>
+<script type="text/javascript" src="js/trebuchet_ms.font.js"></script>
+<script type="text/javascript" src="js/urw_bookman_l.font.js"></script>
+<script type="text/javascript" src="js/urw_chancery_l.font.js"></script>
+<script type="text/javascript" src="js/urw_gothic_l.font.js"></script>
+<script type="text/javascript" src="js/urw_palladio_l.font.js"></script>
+<script type="text/javascript" src="js/verdana.font.js"></script>
+<script type="text/javascript" src="js/webdings.font.js"></script>
+<script type="text/javascript">
+Cufon.replace('h1'); // Works without a selector engine
+Cufon.replace('#cufon'); // Requires a selector engine for IE 6-7
+</script>
+<!--Google Analitycs-->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+	_gaq.push(['_trackPageview']);
+	(function() {
 		var ga = document.createElement('script'); 
 		ga.type = 'text/javascript'; 
 		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		if('https:' == document.location.protocol)
+			ga.src = 'https://ssl.google-analytics.com/ga.js';
+		else
+			ga.src = 'http://www.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; 
 		s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
+	})();
+</script>
 </head>
 <body>
+		<header>
+			<hgroup></hgroup>
+		</header>
+		<nav></nav>
+		<aside>
+			<nav></nav>
+		</aside>
+		<section>
+			<article>
+				<header></header>
+			</article>
+		</section>
+		<footer>
+			<details>
+				<summary></summary>
+			</details>	
+		</footer>		
 <script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
-		
