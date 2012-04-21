@@ -751,27 +751,27 @@ possible use of such coordinates.
 example.-->
 <!--Links to an alternate version of the document (i.e. print page, translated 
 or mirror)-->
-<link rel="alternate" href="example.com">
+<link rel="alternate" href="www.example.com">
 <!--Links to the author of the document-->
-<link rel="author" href="example.com">
+<link rel="author" href="www.example.com">
 <!--Links to a help document-->
-<link rel="help" href="example.com">
+<link rel="help" href="www.example.com">
 <!--Imports an icon to represent the document-->
-<link rel="icon" href="example.com">
+<link rel="icon" href="www.example.com">
 <!--Links to copyright information for the document-->
-<link rel="license" href="example.com">
+<link rel="license" href="www.example.com">
 <!--Indicates that the document is a part of a series, and that the next 
 document in the series is the referenced document-->
-<link rel="next" href="example.com">
+<link rel="next" href="www.example.com">
 <!--Specifies that the target resource should be cached-->
-<link rel="prefetch" href="example.com">
+<link rel="prefetch" href="www.example.com">
 <!--Indicates that the document is a part of a series, and that the previous 
 document in the series is the referenced document-->
-<link rel="prev" href="example.com">
+<link rel="prev" href="www.example.com">
 <!--Links to a search tool for the document-->
-<link rel="search" href="example.com">
+<link rel="search" href="www.example.com">
 <!--URL to a style sheet to import-->
-<link rel="stylesheet" href="example.com">
+<link rel="stylesheet" href="www.example.com">
 
 <!--Direct search spiders to your sitemap-->
 <!--IT SEEMS TO BE INVALID-->
@@ -787,7 +787,7 @@ href="/search.xml">
 
 <!--Canonical URL
 Signal to search engines and others "Use this URL for this page!"-->
-<link rel="canonical" href="">
+<link rel="canonical" href="www.example.com">
 
 <!--Official shortlink
 Signal to the world "This is the shortened URL to use this page!" Poorly 
@@ -844,7 +844,8 @@ type="image/x-icon" or nothing.-->
 	apple-touch-icon-precomposed.png
 	Transparency is not recommended (iOS will put a black BG behind the icon)-->
 <!--STYLE-->
-<base href="www.website.com">
+<!--Base href: Use only in a working site on a server-->
+<!--<base href="http://www.website.com">-->
 <!--Site's own design-->
 <link rel="stylesheet" href="css/style.css"  type="text/css">
 <!--Lightbox-stylesheet, see below the scripts-->
@@ -886,7 +887,7 @@ document traversing, event handling, animating, and Ajax interactions for rapid
 web development. jQuery is designed to change the way that you write JavaScript.
 	http://ur1.ca/txqa
 -->
-<script type='text/javascript' src='js/jquery-1.7.1.min.js'></script>
+<script type='text/javascript' src='js/jquery-1.7.2.min.js'></script>
 <!--Prototype is a JavaScript Framework that aims to ease development of dynamic
 web applications. 
 	http://ur1.ca/8ve8s
@@ -984,50 +985,57 @@ For each font.js used normal/regular, bold, italic/oblique and bold-italic or
 bold-oblique font types, and it contains: Uppercase, lowercase, numerals, 
 punctuations and Basic Latin. Font files renamed to shortened names for easy to 
 use.-->
-<script type="text/javascript" src="cufon-yui.js"></script>
-<script type="text/javascript" src="js/andale_mono.font.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<!--<script type="text/javascript" src="js/andale_mono.font.js"></script>-->
 <script type="text/javascript" src="js/arial.font.js"></script>
-<script type="text/javascript" src="js/arial_narrow.font.js"></script>
-<script type="text/javascript" src="js/bitstream_vera_sans.font.js"></script>
-<script type="text/javascript" 
-		src="js/bitstream_vera_sans_mono.font.js"></script>
-<script type="text/javascript" src="js/bitstream_vera_serif.font.js"></script>
-<script type="text/javascript" src="js/century_schoolbook_l.font.js"></script>
-<script type="text/javascript" src="js/charis_sil.font.js"></script>
-<script type="text/javascript" src="js/comic_sans_ms.font.js"></script>
-<script type="text/javascript" src="js/courier_new.font.js"></script>
-<script type="text/javascript" src="js/dingbats.font.js"></script>
-<script type="text/javascript" src="js/freemono.font.js"></script>
-<script type="text/javascript" src="js/freesans.font.js"></script>
-<script type="text/javascript" src="js/freeserif.font.js"></script>
-<script type="text/javascript" src="js/gentium.font.js"></script>
-<script type="text/javascript" src="js/gentiumalt.font.js"></script>
-<script type="text/javascript" src="js/georgia.font.js"></script>
-<script type="text/javascript" src="js/impact.font.js"></script>
-<script type="text/javascript" src="js/liberation_mono.font.js"></script>
-<script type="text/javascript" src="js/liberation_sans.font.js"></script>
-<script type="text/javascript" src="js/liberation_sans_narrow.font.js"></script>
-<script type="text/javascript" src="js/liberation_serif.font.js"></script>
-<script type="text/javascript" src="js/linux_biolinum.font.js"></script>
-<script type="text/javascript" src="js/linux_libertine.font.js"></script>
-<script type="text/javascript" src="js/luxi_mono.font.js"></script>
-<script type="text/javascript" src="js/luxi_sans.font.js"></script>
-<script type="text/javascript" src="js/nimbus_mono_l.font.js"></script>
-<script type="text/javascript" src="js/nimbus_roman_no9_l.font.js"></script>
-<script type="text/javascript" src="js/nimbus_sans_l.font.js"></script>
-<script type="text/javascript" 
-		src="js/nimbus_sans_l_condensed.font.js"></script>
-<script type="text/javascript" src="js/standard_symbols_l.font.js"></script>
-<script type="text/javascript" src="js/times_new_roman.font.js"></script>
-<script type="text/javascript" src="js/trebuchet_ms.font.js"></script>
-<script type="text/javascript" src="js/urw_bookman_l.font.js"></script>
-<script type="text/javascript" src="js/urw_chancery_l.font.js"></script>
-<script type="text/javascript" src="js/urw_gothic_l.font.js"></script>
-<script type="text/javascript" src="js/urw_palladio_l.font.js"></script>
-<script type="text/javascript" src="js/verdana.font.js"></script>
-<script type="text/javascript" src="js/webdings.font.js"></script>
+<!--<script type="text/javascript" src="js/arial_narrow.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/bitstream_vera_sans.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/bitstream_vera_sans_mono.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/bitstream_vera_serif.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/century_schoolbook_l.font.js"></script>-->
+<!--<script type="text/javascript" src="js/charis_sil.font.js"></script>-->
+<!--<script type="text/javascript" src="js/comic_sans_ms.font.js"></script>-->
+<!--<script type="text/javascript" src="js/courier_new.font.js"></script>-->
+<!--<script type="text/javascript" src="js/dingbats.font.js"></script>-->
+<!--<script type="text/javascript" src="js/freemono.font.js"></script>-->
+<!--<script type="text/javascript" src="js/freesans.font.js"></script>-->
+<!--<script type="text/javascript" src="js/freeserif.font.js"></script>-->
+<!--<script type="text/javascript" src="js/gentium.font.js"></script>-->
+<!--<script type="text/javascript" src="js/gentiumalt.font.js"></script>-->
+<!--<script type="text/javascript" src="js/georgia.font.js"></script>-->
+<!--<script type="text/javascript" src="js/impact.font.js"></script>-->
+<!--<script type="text/javascript" src="js/liberation_mono.font.js"></script>-->
+<!--<script type="text/javascript" src="js/liberation_sans.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/liberation_sans_narrow.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/liberation_serif.font.js"></script>-->
+<!--<script type="text/javascript" src="js/linux_biolinum.font.js"></script>-->
+<!--<script type="text/javascript" src="js/linux_libertine.font.js"></script>-->
+<!--<script type="text/javascript" src="js/luxi_mono.font.js"></script>-->
+<!--<script type="text/javascript" src="js/luxi_sans.font.js"></script>-->
+<!--<script type="text/javascript" src="js/nimbus_mono_l.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/nimbus_roman_no9_l.font.js"></script>-->
+<!--<script type="text/javascript" src="js/nimbus_sans_l.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/nimbus_sans_l_condensed.font.js"></script>-->
+<!--<script type="text/javascript"-->
+		<!--src="js/standard_symbols_l.font.js"></script>-->
+<!--<script type="text/javascript" src="js/times_new_roman.font.js"></script>-->
+<!--<script type="text/javascript" src="js/trebuchet_ms.font.js"></script>-->
+<!--<script type="text/javascript" src="js/urw_bookman_l.font.js"></script>-->
+<!--<script type="text/javascript" src="js/urw_chancery_l.font.js"></script>-->
+<!--<script type="text/javascript" src="js/urw_gothic_l.font.js"></script>-->
+<!--<script type="text/javascript" src="js/urw_palladio_l.font.js"></script>-->
+<!--<script type="text/javascript" src="js/verdana.font.js"></script>-->
+<!--<script type="text/javascript" src="js/webdings.font.js"></script>-->
 <script type="text/javascript">
-Cufon.replace('h1'); // Works without a selector engine
+Cufon.replace('h1', { fontFamily: 'Arial' }); // Works without a selector engine
 Cufon.replace('#cufon'); // Requires a selector engine for IE 6-7
 </script>
 <!--Google Analitycs-->
@@ -1049,23 +1057,307 @@ Cufon.replace('#cufon'); // Requires a selector engine for IE 6-7
 </script>
 </head>
 <body>
-		<header>
-			<hgroup></hgroup>
-		</header>
-		<nav></nav>
-		<aside>
-			<nav></nav>
-		</aside>
-		<section>
-			<article>
-				<header></header>
-			</article>
-		</section>
-		<footer>
-			<details>
-				<summary></summary>
-			</details>	
-		</footer>		
+<!--Following section we add a general html5-site structure:
+	header with groups of headings
+	navigational links
+	sidebar with other navigational links
+	section with articles, which can contains own headers and titles
+	footer, with details and summary 
+	That is a general structure, you can change and modify it if you wish-->	
+<!--
+<header>
+	<hgroup></hgroup>
+</header>
+<nav></nav>
+<aside>
+	<nav></nav>
+</aside>
+<section>
+	<article>
+		<header></header>
+	</article>
+</section>
+<footer>
+	<details>
+		<summary></summary>
+	</details>	
+</footer>
+-->
+<!--Header of site and titles-->
+<header>
+<hgroup>
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+</hgroup>
+</header>
+<!--Navigational links-->
+<nav>
+<a href="#">Link1</a>
+<a href="#">Link2</a>
+<a href="#">Link3</a>
+<a href="#">Link4</a>
+<a href="#">Link5</a>
+</nav>
+<!--Sidebar with navigational links-->
+<aside>
+<nav>
+<a href="#">Aside Link1</a>
+<a href="#">Aside Link2</a>
+<a href="#">Aside Link3</a>
+<a href="#">Aside Link4</a>
+<a href="#">Aside Link5</a>
+</nav>
+</aside>
+<!--Body of site-->
+<section>
+<article>
+<header><h3>Boreas ingreditur</h3></header>
+<!--Long paragraph-->
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae,
+ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis
+pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+<!--Medium paragraph-->
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+mi vitae est. Mauris placerat eleifend leo.</p>
+<!--One sentence paragraph-->
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas.</p>
+<!--Some type of text-->
+<em>Emphasized text</em><br>
+<strong>Strong text</strong><br>
+<dfn>Definition term</dfn><br>
+<code>Computer code</code><br>
+<samp>Sample output from computer program</samp><br>
+<kbd>Keyboard input</kbd><br>
+<var>Variable</var><br>
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both spaces and
+line breaks
+</pre>
+<!--Blockqoute with cite not supported by browsers yet-->
+<!--<blockquote cite="http://www.worldwildlife.org/who/index.html">-->
+<blockquote>For 50 years, WWF has been protecting the future of nature. The
+		world’s leading conservation organization, WWF works in 100 countries
+		and is supported by 1.2 million members in the United States and close
+		to 5 million globally. WWF's unique way of working combines global reach
+		with a foundation in science, involves action at every level from local
+		to global, and ensures the delivery of innovative solutions that meet
+		the needs of both people and nature.</blockquote>
+The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br /> 
+Visit us at:<br />
+Example.com<br />
+Box 564, Disneyland<br />
+USA
+</address>
+<cite>The Scream</cite> by Edward Munch. Painted in 1893.
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+<p>W3Schools.com - the world's largest web development site.</p>
+<p><small>Copyright 1999-2050 by Refsnes Data</small></p>
+<p>My mother has <span style="color:lightblue">light blue</span> eyes.</p>
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>This text contains <sup>superscript</sup> text.</p>
+<!--Lists-->
+<!--Definition list-->
+<dl>
+   <dt>Definition list</dt>
+   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+   <dt>Lorem ipsum dolor sit amet</dt>
+   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+</dl>
+<!--Unordered short list-->
+<ul>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+   <li>Vestibulum auctor dapibus neque.</li>
+</ul>
+<!--Unordered long list-->
+<ul>
+<li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod
+in,pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+<li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,	tincidunt
+quis, accumsan porttitor, facilisis luctus, metus.</li>
+<li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
+ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a,
+sodales sit amet, nisi.</li>
+<li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor,
+ultrices ut, elementum vulputate, nunc.</li>
+</ul>
+<!--Ordered list-->
+<ol>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+   <li>Vestibulum auctor dapibus neque.</li>
+</ol>
+<!--Unordered navigation-->
+<nav>
+<ul>
+	<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+	<li><a href="#nowhere" title="Aliquam tincidunt mauris
+			eurisus">Aliquam</a></li>
+	<li><a href="#nowhere" title="Morbi in sem quis dui placerat
+			ornare">Morbi</a></li>
+	<li><a href="#nowhere" title="Praesent dapibus, neque id cursus
+			faucibus">Praesent</a></li>
+	<li><a href="#nowhere" title="Pellentesque fermentum
+			dolor">Pellentesque</a></li>
+</ul>
+</nav>
+<!--Some kitchen sink-->
+<h1>HTML Ipsum Presents</h1>
+<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et
+malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo.
+Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
+condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean
+fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis
+tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar
+facilisis. Ut felis.</p>
+<h2>Header Level 2</h2>
+<ol>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+</ol>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus	magna. Cras
+in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur
+massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus,
+at luctus turpis elit sit amet quam.	Vivamus pretium ornare est.</p>
+</blockquote>
+<h3>Header Level 3</h3>
+<ul>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+</ul>
+<pre><code>
+#header h1 a { 
+	display: block; 
+	width: 300px; 
+	height: 80px; 
+}
+</code></pre>
+<!--Form-->
+<form action="#" method="post">
+	<div>
+    	<label for="name">Text Input:</label>
+		<input type="text" name="name" id="name" value="" tabindex="1" />
+    </div>
+    <div>
+		<h4>Radio Button Choice</h4>
+        <label for="radio-choice-1">Choice 1</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-1"
+		tabindex="2" value="choice-1">
+		<label for="radio-choice-2">Choice 2</label>
+        <input type="radio" name="radio-choice-2" id="radio-choice-2"
+		 tabindex="3" value="choice-2">
+    </div>
+	<div>
+		<label for="select-choice">Select Dropdown Choice:</label>
+		<select name="select-choice" id="select-choice">
+			<option value="Choice 1">Choice 1</option>
+			<option value="Choice 2">Choice 2</option>
+			<option value="Choice 3">Choice 3</option>
+		</select>
+	</div>
+	<div>
+		<label for="textarea">Textarea:</label>
+		<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+	</div>
+	<div>
+	    <label for="checkbox">Checkbox:</label>
+		<input type="checkbox" name="checkbox" id="checkbox" />
+    </div>
+	<div>
+	    <input type="submit" value="Submit" />
+    </div>
+</form>
+<!--Table-->
+<table>
+	<thead>
+		<tr>
+			<th>Thead1</th>
+			<th>Thead2</th>
+			<th>Thead3</th>
+			<th>Thead4</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>esa</td>
+			<td>des</td>
+			<td>rok</td>
+			<td>red</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>edf</td>
+			<td>asd</td>
+			<td>asd</td>
+			<td>asd</td>
+		</tr>
+	</tbody>
+</table>
+<!--Audio-->
+<h1>Audio, video, and figure</h1>
+<audio controls="controls">
+  <source src="audio/audio.ogg" type="audio/ogg" />
+  <source src="audio/audio.mp3" type="audio/mp3" />
+  Your browser does not support the audio tag.
+</audio>
+<!--Video-->
+<video width="320" height="240" controls="controls">
+  <source src="video/copyright_forever_less_one_day(1080p_h.264-aac).mp4"
+  type="video/mp4" />
+  <source src="video/copyright_forever_less_one_day(720p_h.264-aac).mp4"
+  type="video/mp4" />
+  <source src="video/copyright_forever_less_one_day(720p_vp8-vorbis).webm"
+  type="video/webm" />
+  Your browser does not support the video tag.
+</video>
+<!--Figure-->
+<figure>
+<img src="images/img_example.jpg" alt="The Pulpit Rock" width="304" height="228"
+/>
+  <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+</figure>
+</article>
+</section>
+<footer>
+<!--Details and summary elements not supported by browsers yet-->
+<!--<details>-->
+<!--<summary>This is the summary text.</summary>-->
+	That is the another footer content.
+<!--</details>-->
+</footer>
+<!--YOU CAN PUT YOUR JAVASCRIPTS HERE-->
 <script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>

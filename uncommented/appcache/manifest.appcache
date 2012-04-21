@@ -1,0 +1,38 @@
+CACHE MANIFEST
+# The CACHE MANIFEST string is the first line and is required.
+# Lines starting with a '#' are comment lines.
+# they are all ignored
+  # comments can have spaces before them
+  # but must be alone on the line
+
+# blank lines are ignored too
+# A manifest can have three distinct sections: CACHE, NETWORK, and FALLBACK.
+# CACHE:
+# This is the default section for entries. Files listed under this header (or
+# immediately after the CACHE MANIFEST) will be explicitly cached after they're 
+# downloaded for the first time.
+# NETWORK:
+# Files listed under this section are white-listed resources that require a 
+# connection to the server. All requests to these resources bypass the cache, 
+# even if the user is offline. Wildcards may be used.
+# FALLBACK:
+# An optional section specifying fallback pages if a resource is inaccessible. 
+# The first URI is the resource, the second is the fallback. Both URIs must be 
+# relative and from the same origin as the manifest file. Wildcards may be used.
+# Explicitly cached entries
+index.html
+css/style.css
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+/ /offline.html
+
+# All other resources (e.g. sites) require the user to be online. 
+NETWORK:
+*
+
+# Additional resources to cache
+CACHE:
+images/logo1.png
+images/logo2.png
+images/logo3.png
